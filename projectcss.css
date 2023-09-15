@@ -1,0 +1,104 @@
+a,a:hover
+{
+  text-decoration: none;
+  color: black;
+}
+a.navbuttons:hover{
+  color:white;
+  background-color: black;
+  box-shadow: 0px 3px 4px white;
+}
+a.navbuttons
+{
+background-color: powderblue;
+color:black;
+        margin: 0px;
+        padding: 8px 18px;
+}
+body {
+  background-color:rgb(255, 255, 255);  
+  display: grid; 
+  font-family: Arial, Helvetica, sans-serif; 
+}
+#mimg
+{
+border-radius: 100%;
+border:solid;
+border-width: 5px;
+border-color: red;
+float: right;
+}
+#general
+{
+background-color: dodgerblue;
+margin: 50px 0px 0px 0px;
+}
+#personalinfodiv
+{
+  background-color: dodgerblue;
+}
+    p{
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+    #navdiv{
+      background-color: blue;
+      width: 100%;
+        display: flex;
+        position: fixed;
+        justify-content: center;
+        padding: 10px 0px;
+        border:solid;
+        border-color: blue;
+    }
+
+    .navbuttons{
+        color:black;
+        margin: 0px;
+        padding: 8px 18px;
+        background-color: rgb(255, 255, 255);
+    }
+    #form{
+      align-items: center;
+      margin:  200px
+    }
+    form{
+      padding: 100px;
+      align-items: center;
+    }
+    /*Skill page*/
+    a.lang:hover
+    {
+      border: solid;
+      box-shadow: 4px 5px 8px gray;
+    }
+    .heading
+    {
+      margin-top: 20px;
+    }
+    .skilllang
+    {
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .lang{
+      width:250px;
+      text-align: center;
+      margin: 25px 18px;
+      padding:15px 15px;
+      background-color:dodgerblue;
+      border-radius: 10px;
+    }
+    h2{
+      
+      padding: 10px;
+      background-color: dodgerblue;
+    }
+    .heading
+    {
+      margin-top: 50px;
+      text-align: center;
+    }
