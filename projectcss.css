@@ -21,13 +21,15 @@ body {
   font-family: Arial, Helvetica, sans-serif; 
 }
 
-#general
-{
-  color: white;
-background-color: black;
-margin: 50px 0px 0px 0px;
-text-align: center;
+#general {
+  
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
+
 #mimg
 {
 border-radius: 100%;
@@ -42,9 +44,12 @@ margin-top: 1px;
 }
 #personalinfodiv
 {
-  color: white;
-  background-color: black;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
     p{
     font-family: Arial, Helvetica, sans-serif;
@@ -53,12 +58,12 @@ margin-top: 1px;
 }
 
     #navdiv{
-      background-color: rgba(0, 0, 0, 0.836);
+        background-color: whitesmoke;
       width: 100%;
         display: flex;
         position: fixed;
         justify-content: center;
-        padding: 10px 0px;
+        padding: 8px 10px;
         border:solid;
         border-color: black;
     }
@@ -79,10 +84,13 @@ margin-top: 1px;
     }
     /*Skill page*/
     a.lang:hover
-    {
+    { 
+      color: white;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
       border: solid;
-      background-color: dodgerblue;
-      box-shadow: 4px 5px 8px gray;
+      border-color: blue;
+      background-color: black;
+      
     }
     .heading
     {
@@ -100,16 +108,19 @@ margin-top: 1px;
       margin: 25px 18px;
       padding:15px 15px;
       color: white;
-      background-color:black;
+      background-color: rgba(0, 0, 0, 0.8);
       border-radius: 10px;
     }
-    h2{
-      padding: 10px;
-      background-color: black;
-      color: white;
-    }
+    
     .heading
     {
       margin-top: 50px;
       text-align: center;
     }
+    .skilllang
+    {
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
