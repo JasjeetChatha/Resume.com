@@ -20,6 +20,14 @@ body {
   display: grid; 
   font-family: Arial, Helvetica, sans-serif; 
 }
+
+#general
+{
+  color: white;
+background-color: black;
+margin: 50px 0px 0px 0px;
+text-align: center;
+}
 #mimg
 {
 border-radius: 100%;
@@ -29,17 +37,14 @@ border-color: dodgerblue;
 float: right;
 margin-top: 1px;
 }
-#general
-{
-  color: white;
-background-color: black;
-margin: 50px 0px 0px 0px;
-justify-content: center;
+#college{
+  text-align: center;
 }
 #personalinfodiv
 {
   color: white;
   background-color: black;
+  text-align: center;
 }
     p{
     font-family: Arial, Helvetica, sans-serif;
