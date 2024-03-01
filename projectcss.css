@@ -1,49 +1,44 @@
-a,a:hover
-{
+a, a:hover {
   text-decoration: none;
   color: black;
 }
-a.navbuttons:hover{
-  color:white;
+
+a.navbuttons:hover {
+  color: white;
   background-color: dodgerblue;
   box-shadow: 0px 3px 4px white;
 }
-a.navbuttons
-{
-background-color: whitesmoke;
-color:black;
-        margin: 0px;
-        padding: 8px 18px;
+
+a.navbuttons {
+  background-color: whitesmoke;
+  color: black;
+  margin: 0px;
+  padding: 8px 18px;
 }
+
 body {
-  background-color:white;  
-  display: grid; 
-  font-family: Arial, Helvetica, sans-serif; 
+  background-color: white;
+  display: grid;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #general {
-  
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  color: white;
+  background-color: black;
+  margin: 50px 0px 0px 0px;
+  align-items: center;
 }
 
-#mimg
-{
-border-radius: 100%;
-border:solid;
-border-width: 5px;
-border-color: dodgerblue;
-float: right;
-margin-top: 1px;
+#mimg {
+  border-radius: 100%;
+  border: solid;
+  border-width: 5px;
+  border-color: dodgerblue;
+  float: right;
+  margin-top: 1px;
 }
-#college{
-  text-align: center;
-}
-#personalinfodiv
-{
+
+#personalinfodiv {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
@@ -51,77 +46,60 @@ margin-top: 1px;
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
-    p{
-    font-family: Arial, Helvetica, sans-serif;
 
-
+#navdiv {
+  background-color: whitesmoke;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  padding: 8px 10px;
+  border: solid;
+  border-color: black;
 }
 
-    #navdiv{
-        background-color: whitesmoke;
-      width: 100%;
-        display: flex;
-        position: fixed;
-        justify-content: center;
-        padding: 8px 10px;
-        border:solid;
-        border-color: black;
-    }
+.navbuttons {
+  color: black;
+  margin: 0px;
+  padding: 8px 18px;
+  background-color: rgb(255, 255, 255);
+}
 
-    .navbuttons{
-        color:black;
-        margin: 0px;
-        padding: 8px 18px;
-        background-color: rgb(255, 255, 255);
-    }
-    #form{
-      align-items: center;
-      margin:  200px
-    }
-    form{
-      padding: 100px;
-      align-items: center;
-    }
-    /*Skill page*/
-    a.lang:hover
-    { 
-      color: white;
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-      border: solid;
-      border-color: blue;
-      background-color: black;
-      
-    }
-    .heading
-    {
-      margin-top: 20px;
-    }
-    .skilllang
-    {
-      display: inline-flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .lang{
-      width:250px;
-      text-align: center;
-      margin: 25px 18px;
-      padding:15px 15px;
-      color: white;
-      background-color: rgba(0, 0, 0, 0.8);
-      border-radius: 10px;
-    }
-    
-    .heading
-    {
-      margin-top: 50px;
-      text-align: center;
-    }
-    .skilllang
-    {
-      display: inline-flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    
-    
+#form {
+  align-items: center;
+  margin: 200px;
+}
+
+form {
+  padding: 100px;
+  align-items: center;
+}
+
+/*Skill page*/
+a.lang:hover {
+  color: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  border: solid;
+  border-color: blue;
+  background-color: black;
+}
+
+.heading {
+  margin-top: 20px;
+}
+
+.skilllang {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.lang {
+  width: 250px;
+  text-align: center;
+  margin: 25px 18px;
+  padding: 15px 15px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px
+}
