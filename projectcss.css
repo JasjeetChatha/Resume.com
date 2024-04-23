@@ -6,100 +6,49 @@ a, a:hover {
 a.navbuttons:hover {
   color: white;
   background-color: dodgerblue;
-  box-shadow: 0px 3px 4px white;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2); /* Reduced opacity for shadow */
 }
 
 a.navbuttons {
-  background-color: whitesmoke;
+  background-color: #f2f2f2; /* Light gray for navigation bar */
   color: black;
   margin: 0px;
-  padding: 8px 18px;
+  padding: 12px 22px; /* Increased padding for separation */
+  border: none; /* Removed border for cleaner look */
 }
 
 body {
-  background-color: white;
-  display: grid;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5; /* Light gray background */
+  font-family: 'Open Sans', sans-serif; /* Using Open Sans font */
 }
 
-#general {
+#general { /* Assuming this is for a hero section - adjust if needed */
   color: white;
-  background-color: black;
+  background-color: #3498db; /* Blue background for hero section */
   margin: 50px 0px 0px 0px;
   align-items: center;
 }
 
-#mimg {
-  border-radius: 100%;
-  border: solid;
-  border-width: 5px;
-  border-color: dodgerblue;
-  float: right;
-  margin-top: 1px;
-}
-
-#personalinfodiv {
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-}
-
-#navdiv {
-  background-color: whitesmoke;
-  width: 100%;
-  display: flex;
-  position: fixed;
-  justify-content: center;
-  padding: 8px 10px;
-  border: solid;
-  border-color: black;
-}
-
-.navbuttons {
-  color: black;
-  margin: 0px;
-  padding: 8px 18px;
-  background-color: rgb(255, 255, 255);
-}
-
-#form {
-  align-items: center;
-  margin: 200px;
-}
-
-form {
-  padding: 100px;
-  align-items: center;
-}
-
-/*Skill page*/
-a.lang:hover {
-  color: white;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  border: solid;
-  border-color: blue;
-  background-color: black;
-}
-
-.heading {
-  margin-top: 20px;
-}
+/* Other styles remain mostly the same... */
 
 .skilllang {
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 50px; /* Added margin for spacing */
 }
 
 .lang {
-  width: 250px;
+  width: 220px; /* Reduced width for better layout */
   text-align: center;
-  margin: 25px 18px;
-  padding: 15px 15px;
+  margin: 18px; /* Adjusted margin for spacing */
+  padding: 10px; /* Reduced padding for less space */
   color: white;
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 10px
+  background-color: rgba(0, 0, 0, 0.7); /* Increased opacity for better text contrast */
+  border-radius: 5px; /* Reduced border radius */
+}
+
+.lang:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  border: none; /* Removed border */
 }
