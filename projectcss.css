@@ -1,54 +1,101 @@
-a, a:hover {
-  text-decoration: none;
-  color: black;
-}
-
-a.navbuttons:hover {
-  color: white;
-  background-color: dodgerblue;
-  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2); /* Reduced opacity for shadow */
-}
-
-a.navbuttons {
-  background-color: #f2f2f2; /* Light gray for navigation bar */
-  color: black;
-  margin: 0px;
-  padding: 12px 22px; /* Increased padding for separation */
-  border: none; /* Removed border for cleaner look */
-}
-
+/* General Styles */
 body {
-  background-color: #f5f5f5; /* Light gray background */
-  font-family: 'Open Sans', sans-serif; /* Using Open Sans font */
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-#general { /* Assuming this is for a hero section - adjust if needed */
+h1,
+h2,
+h3 {
+  margin: 1rem 0;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #007bff;
+}
+
+.button {
+  background-color: #007bff;
   color: white;
-  background-color: #3498db; /* Blue background for hero section */
-  margin: 50px 0px 0px 0px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+/* Header Styles */
+header {
+  background-color: #f5f5f5;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-/* Other styles remain mostly the same... */
-
-.skilllang {
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 50px; /* Added margin for spacing */
+nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.lang {
-  width: 220px; /* Reduced width for better layout */
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* Main Content Styles */
+main {
+  padding: 50px 0;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+.skills-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.skills-list li i {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.education-item {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.project-item {
+  margin-bottom: 20px;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.contact-info li i {
+  margin-right: 10px;
+  color: #333;
+}
+
+/* Footer Styles */
+footer {
   text-align: center;
-  margin: 18px; /* Adjusted margin for spacing */
-  padding: 10px; /* Reduced padding for less space */
-  color: white;
-  background-color: rgba(0, 0, 0, 0.7); /* Increased opacity for better text contrast */
-  border-radius: 5px; /* Reduced border radius */
-}
-
-.lang:hover {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  border: none; /* Removed border */
+  padding: 20px 0;
+  background-color: #f5f5f5;
 }
