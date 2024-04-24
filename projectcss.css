@@ -1,5 +1,7 @@
 /* General Styles */
 body {
+  background-color: #fff; /* White background */
+  color: #000; /* Black text color */
   font-family: sans-serif;
   margin: 0;
   padding: 0;
@@ -17,7 +19,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #333;
+  color: #333; /* Adjust link color for better visibility over white background */
 }
 
 a:hover {
@@ -25,7 +27,7 @@ a:hover {
 }
 
 .button {
-  background-color: #007bff;
+  background-color: #000; /* Black button */
   color: white;
   padding: 10px 20px;
   border: none;
@@ -36,7 +38,7 @@ a:hover {
 
 /* Header Styles */
 header {
-  background-color: #f5f5f5;
+  background-color: #000; /* Black background */
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
@@ -52,6 +54,10 @@ nav {
 nav li {
   display: inline-block;
   margin-right: 20px;
+}
+
+nav a {
+  color: #fff; /* White color for navigation links */
 }
 
 /* Main Content Styles */
@@ -71,7 +77,7 @@ section {
 
 .skills-list li i {
   margin-right: 10px;
-  color: #007bff;
+  color: #000; /* Black color for icons */
 }
 
 .education-item {
@@ -90,7 +96,7 @@ section {
 
 .contact-info li i {
   margin-right: 10px;
-  color: #333;
+  color: #000; /* Black color for icons */
 }
 
 /* Footer Styles */
