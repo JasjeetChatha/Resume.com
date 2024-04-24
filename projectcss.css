@@ -76,46 +76,112 @@ nav ul li a {
   background-color: #0056b3;
 }
 
-/* Skills list */
-.skills-list {
-  list-style-type: none;
+/* About section */
+#about {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
 }
 
-.skills-list li {
-  margin-bottom: 10px;
+#about h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#about p {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 1.1em;
+}
+
+/* Skills section */
+#skills {
+  background-color: #e9e9e9;
+  padding: 50px 0;
+}
+
+#skills h2 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.skills-list {
+  text-align: left;
 }
 
 .skills-list i {
-  margin-right: 10px;
+  color: #007bff;
 }
 
-/* Contact info */
-.contact-info {
+/* Education section */
+#education {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+#education h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.education-item {
+  text-align: center;
+}
+
+.education-item ul {
   list-style-type: none;
+  text-align: left;
 }
 
-.contact-info li {
-  margin-bottom: 10px;
+/* Projects section */
+#projects {
+  background-color: #e9e9e9;
+  padding: 50px 0;
 }
 
-.contact-info i {
-  margin-right: 10px;
+#projects h2 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-/* Project item */
 .project-item {
-  margin-bottom: 50px;
+  text-align: center;
 }
 
 .project-item h3 {
+  color: #333;
   margin-bottom: 10px;
 }
 
 .project-item p {
+  color: #666;
   margin-bottom: 20px;
 }
 
-.project-item img {
-  max-width: 100%;
+/* Contact section */
+#contact {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+#contact h2 {
+  color: #333;
   margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: #007bff;
 }
