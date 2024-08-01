@@ -2,127 +2,242 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jasjeet Singh Chatha | Portfolio</title>
-  <link rel="stylesheet" href="projectcss.css">
-  <link rel="stylesheet" href="https://kit.fontawesome.com/your-fontawesome-kit-code.js" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasjeet Singh Chatha Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
+    <!-- Navbar header section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h2 class="logo-heading">Jasjeet Singh Chatha</h2>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars hamburger-icon"></i>
+                <i class="fas fa-times cross-icon"></i>
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="menu-list-items"><a class="links" href="#home">Home</a></li>
+                    <li class="menu-list-items"><a class="links" href="#portfolio">Portfolio</a></li>
+                    <li class="menu-list-items"><a class="links" href="#about">About</a></li>
+                    <li class="menu-list-items"><a class="links" href="#services">Services</a></li>
+                    <li class="menu-list-items"><a class="links" href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-  <section class="hero">
-    <h1>Jasjeet Singh Chatha</h1>
-    <h2>Software Developer | Building Innovative Solutions</h2>
+    <!-- Main hero banner -->
+    <section id="home" class="hero">
+        <div class="intro">
+            <div class="headings">
+                <h3 class="greet-heading">Hello, I'm</h3>
+                <h1 class="my-heading">Jasjeet Singh Chatha</h1>
+                <h4 class="sub-heading">A Computer Systems Technology Student at Sheridan College</h4>
+            </div>
+            <div class="intro-buttons">
+                <button class="btn common-btn">Hire Me</button>
+                <button class="btn ghost-btn">Get Resume</button>
+            </div>
+        </div>
     </section>
 
-  <header>
-        <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Results-driven and technically adept software development enthusiast with a strong foundation in Agile methodologies and cybersecurity fundamentals. Proficient in a wide range of programming languages and tools, including Java, C++, Python, and Spring Boot. Known for collaborative problem-solving and delivering innovative solutions. Eager to leverage skills and passion for technology to contribute to a dynamic software development team. Originally from and currently based in Ontario, Canada.</p>
-      <a href="https://drive.google.com/file/d/11GxeTuXZN2kI30uPOojttOtqlLzgHlIW/view?usp=sharing" class="button">View Resume</a>
-      <a href="#" class="button">Contact Me</a>
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio-heading">
+            <h1 class="my-heading text-center">Technical Skills</h1>
+        </div>
+        <div class="portfolio-content">
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="./Images/cloudComputing.jpg" alt="Cloud Computing">
+                        </div>
+                        <h3 class="greet-heading blue-text">Cloud Computing</h3>
+                        <p class="small-para blue-text">Azure, AWS, Google Cloud</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="./Images/programming.jpg" alt="Programming">
+                        </div>
+                        <h3 class="greet-heading blue-text">Programming</h3>
+                        <p class="small-para blue-text">C#, Python, PowerShell</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="./Images/webDevelopment.jpg" alt="Web Development">
+                        </div>
+                        <h3 class="greet-heading blue-text">Web Development</h3>
+                        <p class="small-para blue-text">HTML, CSS, JavaScript, Angular</p>
+                    </div>
+                </div>
+            </div>
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="./Images/networking.jpg" alt="Networking">
+                        </div>
+                        <h3 class="greet-heading blue-text">Networking</h3>
+                        <p class="small-para blue-text">Network Administration</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="./Images/wordpress.jpg" alt="WordPress">
+                        </div>
+                        <h3 class="greet-heading blue-text">WordPress</h3>
+                        <p class="small-para blue-text">Content Management System</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="./Images/videoEditing.jpg" alt="Video Editing">
+                        </div>
+                        <h3 class="greet-heading blue-text">Video Editing</h3>
+                        <p class="small-para blue-text">Editing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>
-          <i class="fas fa-code"></i> Programming Languages: Java, C++, Python, SQL, Spring Boot
-        </li>
-        <li>
-          <i class="fas fa-drafting-compass"></i> Web Design: HTML, CSS, JavaScript, Angular, UI/UX Design
-        </li>
-        <li>
-          <i class="fas fa-shield-alt"></i> Cybersecurity Basics
-        </li>
-        <li>
-          <i class="fas fa-object-group"></i> Object-oriented Programming (OOP)
-        </li>
-        <li>
-          <i class="fas fa-server"></i> Networking Concepts, Linux Operating System
-        </li>
-      </ul>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-text">
+            <h1 class="my-heading">About Me</h1>
+            <p class="lead-para">
+                As a dedicated Computer Systems Technology student at Sheridan College, I have a solid foundation in various IT disciplines including cloud computing, programming, web development, and network administration. My hands-on experience spans cloud environments like Azure and AWS, where I've developed proof-of-concepts, prototypes, and automated tasks using languages such as C#, Python, and PowerShell. I have successfully implemented responsive web applications, enhanced system efficiencies, and optimized user interfaces, resulting in significant performance improvements.
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="./Images/heroImg2.avif" alt="About Image">
+        </div>
     </section>
 
-    <section id="education">
-      <h2>Education</h2>
-      <div class="education-item">
-        <h3>Computer Systems Technology - Information System Engineering</h3>
-        <p>Sheridan College | Brampton, Ontario (Sept. 2022 - Dec. 2025)</p>
-        <ul>
-          <li>Web Development</li>
-          <li>Object-Oriented Programming</li>
-          <li>Networking Systems</li>
-          <li>Linux/Unix Operating System</li>
-          <li>Interactive User Interface Design</li>
-          <li>Computer Math Fundamentals</li>
-          <li>Responsive Web Design</li>
-        </ul>
-      </div>
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="services-heading">
+            <h1 class="my-heading text-center">My Services</h1>
+        </div>
+        <div class="services-content">
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">Cloud Solutions</h3>
+                        <p class="small-para">
+                            Expertise in deploying and managing cloud infrastructure on platforms like Azure, AWS, and Google Cloud.
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">Software Development</h3>
+                        <p class="small-para">
+                            Proficient in developing software applications using C#, Python, and PowerShell, with a focus on automation and optimization.
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">Web Development</h3>
+                        <p class="small-para">
+                            Skilled in building responsive web applications with HTML, CSS, JavaScript, and Angular, ensuring optimal user experiences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">Network Administration</h3>
+                        <p class="small-para">
+                            Capable of managing and maintaining network infrastructure to ensure reliable and secure communication.
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fab fa-wordpress-simple"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">WordPress Development</h3>
+                        <p class="small-para">
+                            Specializing in creating and managing content on WordPress, ensuring dynamic and engaging websites.
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">Video Editing</h3>
+                        <p class="small-para">
+                            Proficient in video editing, creating compelling content for various platforms.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-
-      <div class="project-item">
-        <h3>Student Data Management System</h3>
-        <img src="image.png" alt="Screenshot of Student Data Management System">
-        <p>Java application for efficient student data management with user authentication and authorization. Improved data organization and streamlined tasks for professors. (See code on GitHub)</p>
-        <a href="https://github.com/JasjeetChatha/StudentDatabase-Java" class="button">View on GitHub</a><br><br><br>
-        <a href="https://docs.google.com/document/d/1DccWy8Rs5anv4EO3UN-LWu77IPKi4xBW/edit?usp=drive_link&ouid=103628360318399713005&rtpof=true&sd=true">Project Details</a>
-        <p><b>Technology Stack:</b> Java, Spring Boot, MySQL</p>
-      </div>
-
-      <div class="project-item">
-        <h3>Portfolio Website</h3>
-        <img src="screenshot2.jpg" alt="Screenshot of Portfolio Website">
-        <p>This website showcasing projects and skills using HTML, CSS, and JavaScript. Attracted over 100 unique visitors.</p>
-        <a href="https://github.com/JasjeetChatha/Resume.com" class="button">View Code</a><br><br><br>
-        <a href="https://jasjeetchatha.github.io/Resume.com/" class="button">Portfolio</a>
-        <p><b>Technology Stack:</b> HTML, CSS, JavaScript</p>
-      </div>
-      
-      <div class="project-item">
-  <h3>To-Do List Application</h3>
-  <img src="screenshot3.jpg" alt="Screenshot of To-Do List Application">
-  <p>A web application for managing tasks with functionalities to add tasks. Built using HTML, CSS, and JavaScript.</p>
-  <a href="https://github.com/JasjeetChatha/To-do_List" class="button">View Code</a><br><br><br>
-        <a href="https://jasjeetchatha.github.io/To-do_List/" class="button">To-do List</a>
-  <p><b>Technology Stack:</b> HTML, CSS, JavaScript</p>
-</div>
-
-
-      <section id="contact">
-        <h2>Contact</h2>
-        <ul class="contact-info">
-          <li>
-            <i class="fas fa-phone"></i> +1 (437) 663 8423
-          </li>
-          <li>
-            <i class="fas fa-envelope"></i> jasjeet.chatha@gmail.com  </li>
-          <li>
-            <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/jasjeet-chatha-543911254/">LinkedIn Profile</a>  </li>
-        </ul>
-      </section>
-
+    <!-- Contact Me Section -->
+    <section class="contact" id="contact">
+        <div class="contact-heading">
+            <h1 class="my-heading text-center">Contact Me</h1>
+        </div>
+        <div class="contact-content">
+            <form action="#">
+                <div class="my-row">
+                    <div class="my-col">
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="my-col">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                </div>
+                <textarea class="form-control" placeholder="Message"></textarea>
+                <button class="btn common-btn" type="submit">Send Message</button>
+            </form>
+        </div>
     </section>
 
-  </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-text">
+            &copy; 2023 Jasjeet Singh Chatha. All rights reserved.
+        </p>
+    </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
