@@ -226,24 +226,43 @@
 
     <!-- Contact Me Section -->
     <section class="contact" id="contact">
-        <div class="contact-heading">
-            <h1 class="my-heading text-center">Contact Me</h1>
-        </div>
-        <div class="contact-content">
-            <form action="#">
-                <div class="my-row">
-                    <div class="my-col">
-                        <input type="text" class="form-control" placeholder="Name">
-                    </div>
-                    <div class="my-col">
-                        <input type="email" class="form-control" placeholder="Email">
-                    </div>
-                </div>
-                <textarea class="form-control" placeholder="Message"></textarea>
-                <button class="btn common-btn" type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
+      <div class="contact-heading">
+          <h1 class="my-heading text-center">Contact Me</h1>
+      </div>
+      <div class="contact-content">
+          <div class="contact-form-container">
+              <h1 class="greet-heading">Get In Touch</h1>
+              <form id="contact-form" class="contact-form">
+                  <input id="name" class="form-controls" type="text" placeholder="Your Name" required>
+                  <input id="email" class="form-controls" type="email" placeholder="Your Email" required>
+                  <input id="phone" class="form-controls" type="text" placeholder="Your Phone" required>
+                  <textarea id="message" class="form-controls" placeholder="Write your message" name="message" cols="30" rows="10" required></textarea>
+                  <input class="form-btn btn common-btn" type="submit" value="Send Message">
+              </form>
+          </div>
+          <div class="contact-details">
+              <h1 class="greet-heading">My Contact Details</h1>
+              <div class="details">
+                  <h5 class="contact-heading">EMAIL</h5>
+                  <p class="contact-text">chatjasj@sheridancollege.ca</p>
+              </div>
+              <div class="details">
+                  <h5 class="contact-heading">PHONE</h5>
+                  <p class="contact-text">+1 (437)-663-8423</p>
+              </div>
+              <div class="details">
+                  <h5 class="contact-heading">LinkedIn</h5>
+                  <a href="https://www.linkedin.com/in/jasjeet-chatha-543911254/"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+              <div class="details">
+                  <h5 class="contact-heading">ADDRESS</h5>
+                  <p class="contact-text">Brampton, On</p>
+                  <p>Canada</p>
+              </div>
+          </div>
+      </div>
+  </section>
+  
 
     <!-- Footer -->
     <footer class="footer">
