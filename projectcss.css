@@ -59,6 +59,17 @@ body {
 
 /* Main Hero Section Styles */
 .hero {
+<<<<<<< HEAD
+  background-image: url('./Images/heroImg3.avif');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 4.8rem 0;
+=======
     background-image: url('./Images/heroImg3.avif');
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -68,6 +79,7 @@ body {
     align-items: center;
     justify-content: start;
     margin: 4.8rem 0;
+>>>>>>> f6ee547e4dd3f1d45fb4ceb0d4925d99b28d5cbe
 }
 
 .hero .intro {
