@@ -1,4 +1,4 @@
-/* Styles defined for the desktop or the bigger screen devices*/
+/* Styles defined for the desktop or the bigger screen devices */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
@@ -16,7 +16,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-image: linear-gradient(90deg, #74D7BB, #53C8B6, #35A99C);
+    background-image: linear-gradient(90deg, #0033A0, #00247D, #001F5F);
     background-color: transparent;
 }
 
@@ -86,7 +86,7 @@ body {
 .about {
     display: flex;
     align-items: center;
-    background-image: linear-gradient(45deg, #363D73, #2794B3);
+    background-image: linear-gradient(45deg, #0033A0, #00247D);
     justify-content: space-between;
     width: 100%;
 }
@@ -112,7 +112,7 @@ body {
 .port-card {
     padding: 0 !important;
     background: none !important;
-    border: 2px solid #000;
+    border: 2px solid #0033A0;
 }
 
 .port-card .image {
@@ -155,7 +155,7 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 20px;
-    background-image: linear-gradient(#74D7BB, #53C8B6, #35A99C);
+    background-image: linear-gradient(#0033A0, #00247D);
     padding: 1rem;
 }
 
@@ -163,7 +163,7 @@ body {
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    background-color: #363D73;
+    background-color: #00247D;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -210,7 +210,7 @@ body {
 
 /* Footer Styles */
 .footer {
-    background-color: #000;
+    background-color: #00247D;
     color: #fff;
     padding: 2rem;
 }
@@ -223,7 +223,7 @@ body {
     width: 50px;
     margin: 1rem 1rem 0 1rem;
     border-radius: 50%;
-    background-color: #53C8B6;
+    background-color: #0033A0;
 }
 
 .footer-links {
@@ -246,11 +246,6 @@ body {
     display: flex;
     list-style: none;
 }
-
-
-
-
-
 
 /* utility classes */
 .greet-heading {
@@ -293,31 +288,31 @@ body {
 }
 
 .common-btn {
-    background-color: #35A99C;
+    background-color: #0033A0;
     color: #fff;
-    border: 2px solid #35A99C;
+    border: 2px solid #0033A0;
     transition: all 0.25s;
 }
 
 .common-btn:hover {
     background-color: #fff;
-    color: #35A99C;
-    border: 2px solid #35A99C;
+    color: #0033A0;
+    border: 2px solid #0033A0;
     outline: none;
 }
 
 .ghost-btn {
     background-color: #fff;
-    color: #35A99C;
-    border: 2px solid #35A99C;
+    color: #0033A0;
+    border: 2px solid #0033A0;
     outline: none;
 }
 
 .ghost-btn:hover {
-    background-color: #35A99C;
+    background-color: #0033A0;
     color: #fff;
     transition: all 0.25s;
-    border: 2px solid #35A99C;
+    border: 2px solid #0033A0;
 }
 
 .heading-span {
@@ -338,5 +333,5 @@ body {
 }
 
 .blue-text {
-    color: #363D73;
+    color: #0033A0;
 }
