@@ -59,9 +59,10 @@ body {
 
 /* Main Hero Section Styles */
 .hero {
-  background-image: url('prog.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-image: url('prog.png'); /* Background image */
+  background-repeat: no-repeat; /* Prevents repeating the image */
+  background-size: auto; /* Keeps the image's original size */
+  background-position: left center; /* Aligns the image to the left center */
   width: 100%;
   height: 100vh;
   display: flex;
@@ -335,13 +336,4 @@ body {
 
 .blue-text {
     color: #0033A0;
-}
-.profile-image {
-  height: 300px; /* Adjust as needed */
-  width: auto; /* Maintains aspect ratio */
-  margin-right: 2rem; /* Adjust spacing from text */
-}
-
-.headings {
-  flex: 1; /* Allows text to take up remaining space */
 }
