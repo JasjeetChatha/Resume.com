@@ -59,10 +59,10 @@ body {
 
 /* Main Hero Section Styles */
 .hero {
-  background-image: url('prog.png'); /* Background image */
-  background-repeat: no-repeat; /* Prevents repeating the image */
-  background-size: auto; /* Keeps the image's original size */
-  background-position: left center; /* Aligns the image to the left center */
+  
+  
+
+ 
   width: 100%;
   height: 100vh;
   display: flex;
