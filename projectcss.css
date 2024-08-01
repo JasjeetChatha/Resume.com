@@ -59,7 +59,7 @@ body {
 
 /* Main Hero Section Styles */
 .hero {
-    background-image: url('./Images/heroImg3.avif');
+    background-image: url('prog.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
