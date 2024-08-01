@@ -335,3 +335,12 @@ body {
 .blue-text {
     color: #0033A0;
 }
+.profile-image {
+  height: 300px; /* Adjust as needed */
+  width: auto; /* Maintains aspect ratio */
+  margin-right: 2rem; /* Adjust spacing from text */
+}
+
+.headings {
+  flex: 1; /* Allows text to take up remaining space */
+}
