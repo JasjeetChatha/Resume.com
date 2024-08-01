@@ -63,7 +63,7 @@ body {
   background-repeat: no-repeat; /* Prevents repeating the image */
   background-size: auto; /* Keeps the image's original size */
   background-position: left center; /* Aligns the image to the left center */
-  width: 100%;
+  width: 50%;
   height: 100vh;
   display: flex;
   align-items: center;
