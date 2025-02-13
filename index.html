@@ -2,279 +2,320 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jasjeet Singh Chatha Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="projectcss.css">
-    <link rel="stylesheet" href="responsive.css">
-</head>
-
-<body>
-    <!-- Navbar header section -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="logo">
-                <h2 class="logo-heading">Jasjeet Singh Chatha</h2>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <i class="fas fa-bars hamburger-icon"></i>
-                <i class="fas fa-times cross-icon"></i>
-            </div>
-            <div class="menu">
-                <ul class="menu-list">
-                    <li class="menu-list-items"><a class="links" href="#home">Home</a></li>
-                    <li class="menu-list-items"><a class="links" href="#portfolio">Portfolio</a></li>
-                    <li class="menu-list-items"><a class="links" href="#about">About</a></li>
-                    <li class="menu-list-items"><a class="links" href="#services">Services</a></li>
-                    <li class="menu-list-items"><a class="links" href="#contact">Contact Me</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Main hero banner -->
-    <section id="home" class="hero">
-        <div class="intro">
-          
-            <div class="headings">
-                <h3 class="greet-heading">Hello, I'm</h3>
-                <h1 class="my-heading">Jasjeet Singh Chatha</h1>
-                <h4 class="sub-heading">A Computer Systems Technology Student at Sheridan College</h4>
-            </div>
-            <div class="intro-buttons">
-              <button class="btn common-btn" onclick="window.open('https://www.linkedin.com/in/jasjeet-chatha-543911254/', '_blank')">Hire Me</button>
-              <button class="btn ghost-btn" onclick="downloadPDF()">Get Resume</button>
-          </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio">
-      <div class="portfolio-heading">
-          <h1 class="my-heading text-center">Featured Portfolio</h1>
-      </div>
-      <div class="portfolio-content">
-          <div class="my-row">
-              <div class="my-col">
-                  <a href="https://chatjasj.dev.fast.sheridanc.on.ca/Angular%20Exercise/Activity8/">
-                  <div class="my-card port-card">
-                      <div class="image">
-                          <img src="web.png" 
-                               alt="Web Design Image">
-                      </div>
-                      <h3 class="greet-heading blue-text">Web Development</h3>
-                      <p class="small-para blue-text">HTML, CSS, React (Learning), Angular, JavaScript, WordPress, Bootstrap</p>
-                  </div></a>
-              </div>
-              <div class="my-col">
-                  <div class="my-card port-card">
-                      <div class="image">
-                          <img src="prgramming.png" 
-                               alt="Programming Language Image">
-                      </div>
-                      <h3 class="greet-heading blue-text">
-                        Programming Languages
-                        </h3>
-                      <p class="small-para blue-text">Java, JavaScript, Python, C# (ASP.NET), Node.js, PHP,C</p>
-                  </div>
-              </div>
-              <div class="my-col">
-                  <div class="my-card port-card">
-                      <div class="image">
-                          <img src="database.png" alt="Database Management Image">
-                      </div>
-                      <h3 class="greet-heading blue-text">Database Management</h3>
-                      <p class="small-para blue-text">MySQL, MongoDB, Azure</p>
-                  </div>
-              </div>
-          </div>
-          <div class="my-row">
-              <div class="my-col">
-                  <div class="my-card port-card">
-                      <div class="image">
-                          <img src="cloud.png" 
-                               alt="Cloud Computing Image">
-                      </div>
-                      <h3 class="greet-heading blue-text">
-                        Cloud Computing
-                        </h3>
-                      <p class="small-para blue-text">AWS (EC2), Microsoft Azure</p>
-                  </div>
-              </div>
-              <div class="my-col">
-                  <div class="my-card port-card">
-                      <div class="image">
-                          <img src="version.png" 
-                               alt="Version Control Image">
-                      </div>
-                      <h3 class="greet-heading blue-text">
-                        Version Control
-                        </h3>
-                      <p class="small-para blue-text">
-                        Git, GitHub
-                        </p>
-                  </div>
-              </div>
-              <div class="my-col">
-                  <div class="my-card port-card">
-                      <div class="image">
-                          <img src="software.png" 
-                               alt="Software Development Image">
-                      </div>
-                      <h3 class="greet-heading blue-text">
-                        Software Development
-                        </h3>
-                      <p class="small-para blue-text">Agile, Waterfall methodologies, JIRA</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="about-text">
-            <h1 class="my-heading">About Me</h1>
-            <p class="lead-para">
-                As a dedicated Computer Systems Technology student at Sheridan College, I have a solid foundation in various IT disciplines including cloud computing, programming, web development, and network administration. My hands-on experience spans cloud environments like Azure and AWS, where I've developed proof-of-concepts, prototypes, and automated tasks using languages such as C#, Python, and PowerShell. I have successfully implemented responsive web applications, enhanced system efficiencies, and optimized user interfaces, resulting in significant performance improvements.
-            </p>
-        </div>
-        <div class="about-image">
-            <img src="resume.jpg" alt="About Image">
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="services-heading">
-            <h1 class="my-heading text-center">My Services</h1>
-        </div>
-        <div class="services-content">
-            <div class="my-row">
-                <div class="my-col">
-                    <div class="my-card">
-                        <div class="icon">
-                            <i class="fas fa-cloud"></i>
-                        </div>
-                        <h3 class="greet-heading white-text">Cloud Solutions</h3>
-                        <p class="small-para">
-                            Expertise in deploying and managing cloud infrastructure on platforms like Azure, AWS, and Google Cloud.
-                        </p>
-                    </div>
-                </div>
-                <div class="my-col">
-                    <div class="my-card">
-                        <div class="icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h3 class="greet-heading white-text">Software Development</h3>
-                        <p class="small-para">
-                            Proficient in developing software applications using C#, Python, and PowerShell, with a focus on automation and optimization.
-                        </p>
-                    </div>
-                </div>
-                <div class="my-col">
-                    <div class="my-card">
-                        <div class="icon">
-                            <i class="fas fa-desktop"></i>
-                        </div>
-                        <h3 class="greet-heading white-text">Web Development</h3>
-                        <p class="small-para">
-                            Skilled in building responsive web applications with HTML, CSS, JavaScript, and Angular, ensuring optimal user experiences.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="my-row">
-                <div class="my-col">
-                    <div class="my-card">
-                        <div class="icon">
-                            <i class="fas fa-network-wired"></i>
-                        </div>
-                        <h3 class="greet-heading white-text">Network Administration</h3>
-                        <p class="small-para">
-                            Capable of managing and maintaining network infrastructure to ensure reliable and secure communication.
-                        </p>
-                    </div>
-                </div>
-                <div class="my-col">
-                    <div class="my-card">
-                        <div class="icon">
-                            <i class="fab fa-wordpress-simple"></i>
-                        </div>
-                        <h3 class="greet-heading white-text">WordPress Development</h3>
-                        <p class="small-para">
-                            Specializing in creating and managing content on WordPress, ensuring dynamic and engaging websites.
-                        </p>
-                    </div>
-                </div>
-                <div class="my-col">
-                    <div class="my-card">
-                        <div class="icon">
-                          <i class="fa-solid fa-screwdriver-wrench"></i>
-                        </div>
-                        <h3 class="greet-heading white-text">It Service </h3>
-                        <p class="small-para">
-                            Proficient in providing excellent customer service and fulfill the task asked by the customer.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Me Section -->
-    <section class="contact" id="contact">
-      <div class="contact-heading">
-          <h1 class="my-heading text-center">Contact Me</h1>
-      </div>
-      <div class="contact-content">
-          <div class="contact-form-container">
-              <h1 class="greet-heading">Get In Touch</h1>
-              <form id="contact-form" class="contact-form">
-                  <input id="name" class="form-controls" type="text" placeholder="Your Name" required>
-                  <input id="email" class="form-controls" type="email" placeholder="Your Email" required>
-                  <input id="phone" class="form-controls" type="text" placeholder="Your Phone" required>
-                  <textarea id="message" class="form-controls" placeholder="Write your message" name="message" cols="30" rows="10" required></textarea>
-                  <input class="form-btn btn common-btn" type="submit" value="Send Message">
-              </form>
-          </div>
-          <div class="contact-details">
-              <h1 class="greet-heading">My Contact Details</h1>
-              <div class="details">
-                  <h5 class="contact-heading">EMAIL</h5>
-                  <p class="contact-text">chatjasj@sheridancollege.ca</p>
-              </div>
-              <div class="details">
-                  <h5 class="contact-heading">PHONE</h5>
-                  <p class="contact-text">+1 (437)-663-8423</p>
-              </div>
-              <div class="details">
-                  <h5 class="contact-heading">LinkedIn          GitHub</h5>
-                  &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.linkedin.com/in/jasjeet-chatha-543911254/"><i class="fa-brands fa-linkedin"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                              <a href="https://github.com/JasjeetChatha?tab=repositories"><i class="fa-brands fa-square-github"></i></a>
-                </div>
-              <div class="details">
-                  <h5 class="contact-heading">ADDRESS</h5>
-                  <p class="contact-text">Brampton, On</p>
-                  <p>Canada</p>
-              </div>
-          </div>
-      </div>
-  </section>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- New CSS Files -->
+    <link rel="stylesheet" href="projectcss.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
   
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p class="footer-text">
-            &copy; 2023 Jasjeet Singh Chatha. All rights reserved.
-        </p>
-    </footer>
+<body>
+  <!-- Navbar header section -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">
+        <h2 class="logo-heading">Jasjeet Singh Chatha</h2>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars hamburger-icon"></i>
+        <i class="fas fa-times cross-icon"></i>
+      </div>
+      <div class="menu">
+        <ul class="menu-list">
+          <li class="menu-list-items"><a class="links" href="#home">Home</a></li>
+          <li class="menu-list-items"><a class="links" href="#experience">Experience</a></li>
+          <li class="menu-list-items"><a class="links" href="#projects">Projects</a></li>
+          <li class="menu-list-items"><a class="links" href="#skills">Technical Skills</a></li>
+          <li class="menu-list-items"><a class="links" href="#about">About</a></li>
+          <li class="menu-list-items"><a class="links" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-    <script src="script.js"></script>
+  <!-- Main hero banner -->
+  <section id="home" class="hero">
+    <div class="intro">
+      <div class="headings">
+        <h3 class="greet-heading">Hello, I'm</h3>
+        <h1 class="my-heading">Jasjeet Singh Chatha</h1>
+        <h4 class="sub-heading">
+          Detail-oriented Computer Systems Technology student specializing in system design, cloud computing, and network administration.
+        </h4>
+      </div>
+      <div class="intro-buttons">
+        <button class="btn common-btn"
+          onclick="window.open('https://www.linkedin.com/in/jasjeet-chatha-543911254/', '_blank')">Hire Me</button>
+        <button class="btn ghost-btn" onclick="downloadPDF()">Get Resume</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
+    <div class="experience-heading">
+      <h1 class="my-heading text-center">Work Experience</h1>
+    </div>
+    <div class="experience-content">
+      <div class="experience-card">
+        <h2>Junior Web Developer (Systems &amp; Infrastructure Focus)</h2>
+        <h4>Skill Squirrel | Remote | Sept 2024 – Dec 2024</h4>
+        <ul>
+          <li>Assisted in deploying and configuring cloud-based applications on AWS, contributing to automated deployment pipelines via GitHub CI/CD, reducing deployment cycles by 25%.</li>
+          <li>Collaborated with cross-functional teams to integrate front-end modules with secure back-end services, ensuring system stability and compliance with accessibility standards.</li>
+          <li>Performed in-depth code reviews and debugging sessions, leading to a 20% reduction in post-deployment issues and improved system reliability.</li>
+        </ul>
+      </div>
+      <div class="experience-card">
+        <h2>Web Developer (Infrastructure &amp; Efficiency Enhancements)</h2>
+        <h4>MyKolachi Karahi &amp; BBQ House | Mississauga, Ontario | Jan 2024 – Apr 2024</h4>
+        <ul>
+          <li>Developed a clock-in/out system using ASP.NET and C#, streamlining workforce management and improving operational efficiency by 40%.</li>
+          <li>Enhanced backend processes using Java and MySQL, resulting in a 20% reduction in order processing time and improved system responsiveness.</li>
+          <li>Utilized Agile methodologies and Git for version control, achieving a 95% on-time project milestone rate while ensuring seamless system updates.</li>
+        </ul>
+      </div>
+      <div class="experience-card">
+        <h2>Freelance Web Developer (Capstone Project with Systems Integration)</h2>
+        <h4>Sheridan HR Group | Jan 2025 – Apr 2025</h4>
+        <ul>
+          <li>Collaborated with HR and IT teams to redesign and deploy a client website with integrated e-commerce, invoicing, and service booking systems.</li>
+          <li>Focused on responsive design and backend process optimization to ensure scalable deployment and enhanced user experience.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="portfolio">
+    <div class="portfolio-heading">
+      <h1 class="my-heading text-center">Projects</h1>
+    </div>
+    <div class="portfolio-content">
+      <div class="my-row">
+        <div class="my-col">
+          <div class="my-card port-card">
+            <div class="image">
+              <img src="aws_project.png" alt="AWS Cloud-Based Security Project" />
+            </div>
+            <h3 class="greet-heading">AWS Cloud-Based Security Project</h3>
+            <p class="small-para">
+              Deployed AWS EC2 instances using Python automation, implementing firewall configurations and access control policies. Future plans include AWS Lambda integration for automated security responses.
+            </p>
+          </div>
+        </div>
+        <div class="my-col">
+          <div class="my-card port-card">
+            <div class="image">
+              <img src="infra_automation.png" alt="Infrastructure Automation Project" />
+            </div>
+            <h3 class="greet-heading">Infrastructure Automation Project</h3>
+            <p class="small-para">
+              Developing an automated infrastructure deployment using Terraform and Ansible to establish best practices for configuration management and continuous monitoring.
+            </p>
+          </div>
+        </div>
+        <div class="my-col">
+          <div class="my-card port-card">
+            <div class="image">
+              <img src="student_data.png" alt="Student Data Management System" />
+            </div>
+            <h3 class="greet-heading">Student Data Management System</h3>
+            <p class="small-para">
+              Java-based GUI application that streamlines student record management, reducing data retrieval time by 50% while ensuring secure access with MySQL.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="my-row">
+        <div class="my-col">
+          <div class="my-card port-card">
+            <div class="image">
+              <img src="lawyer_info.png" alt="Lawyer Information Management System" />
+            </div>
+            <h3 class="greet-heading">Lawyer Information Management System</h3>
+            <p class="small-para">
+              Secure, role-based access application built with Spring Boot and MySQL, optimizing legal data management and reducing manual entry time by 30%.
+            </p>
+          </div>
+        </div>
+        <div class="my-col">
+          <div class="my-card port-card">
+            <div class="image">
+              <img src="portfolio_project.png" alt="Portfolio Website" />
+            </div>
+            <h3 class="greet-heading">Portfolio Website</h3>
+            <p class="small-para">
+              Responsive website showcasing projects and secure coding practices to enhance professional online presence.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section id="skills" class="services">
+    <div class="services-heading">
+      <h1 class="my-heading text-center">Technical Skills</h1>
+    </div>
+    <div class="services-content">
+      <div class="my-row">
+        <div class="my-col">
+          <div class="my-card">
+            <div class="icon">
+              <i class="fas fa-server"></i>
+            </div>
+            <h3 class="greet-heading white-text">Operating Systems</h3>
+            <p class="small-para">Linux (Ubuntu, CentOS) &amp; Windows Server</p>
+          </div>
+        </div>
+        <div class="my-col">
+          <div class="my-card">
+            <div class="icon">
+              <i class="fas fa-cloud"></i>
+            </div>
+            <h3 class="greet-heading white-text">Cloud Platforms</h3>
+            <p class="small-para">AWS (EC2, VPC, IAM), Microsoft Azure</p>
+          </div>
+        </div>
+        <div class="my-col">
+          <div class="my-card">
+            <div class="icon">
+              <i class="fas fa-box"></i>
+            </div>
+            <h3 class="greet-heading white-text">Virtualization &amp; Containerization</h3>
+            <p class="small-para">Docker, Kubernetes, VMware (fundamentals)</p>
+          </div>
+        </div>
+      </div>
+      <div class="my-row">
+        <div class="my-col">
+          <div class="my-card">
+            <div class="icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3 class="greet-heading white-text">Scripting &amp; Automation</h3>
+            <p class="small-para">Python, Bash, (PowerShell in progress)</p>
+          </div>
+        </div>
+        <div class="my-col">
+          <div class="my-card">
+            <div class="icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h3 class="greet-heading white-text">Infrastructure as Code</h3>
+            <p class="small-para">CI/CD pipelines, Terraform, Ansible</p>
+          </div>
+        </div>
+        <div class="my-col">
+          <div class="my-card">
+            <div class="icon">
+              <i class="fas fa-lock"></i>
+            </div>
+            <h3 class="greet-heading white-text">Networking &amp; Security</h3>
+            <p class="small-para">TCP/IP, VPN, Firewalls, VLANs, DHCP, DNS</p>
+          </div>
+        </div>
+      </div>
+      <div class="my-row">
+        <div class="my-col">
+          <div class="my-card">
+            <div class="icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3 class="greet-heading white-text">Database Management</h3>
+            <p class="small-para">MySQL, MongoDB</p>
+          </div>
+        </div>
+        <div class="my-col">
+          <div class="my-card">
+            <div class="icon">
+              <i class="fab fa-git-alt"></i>
+            </div>
+            <h3 class="greet-heading white-text">Version Control</h3>
+            <p class="small-para">Git, GitHub, Jira</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="about-text">
+      <h1 class="my-heading">About Me</h1>
+      <p class="lead-para">
+        I am a detail-oriented Computer Systems Technology student at Sheridan College specializing in system design, cloud computing, and network administration. I have hands-on experience deploying scalable solutions, automating processes, and maintaining secure, efficient environments across Linux and Windows server ecosystems.
+      </p>
+      <p class="lead-para">
+        My current focus includes expanding expertise in configuration management and infrastructure automation using Terraform and Ansible while rapidly developing proficiency in PowerShell scripting.
+      </p>
+      <p class="lead-para">
+        <strong>Education:</strong> Computer Systems Technology – Information System Engineering, Sheridan College (Sept 2022 – Dec 2025) | GPA: 3.55
+      </p>
+      <p class="lead-para">
+        <strong>Certifications:</strong> AWS Certified Cloud Practitioner (In Progress), LinkedIn Learning: Learning the JavaScript Language
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="resume.jpg" alt="Jasjeet Singh Chatha" />
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="contact-heading">
+      <h1 class="my-heading text-center">Contact Me</h1>
+    </div>
+    <div class="contact-content">
+      <div class="contact-form-container">
+        <h1 class="greet-heading">Get In Touch</h1>
+        <form id="contact-form" class="contact-form">
+          <input id="name" class="form-controls" type="text" placeholder="Your Name" required />
+          <input id="email" class="form-controls" type="email" placeholder="Your Email" required />
+          <input id="phone" class="form-controls" type="text" placeholder="Your Phone" required />
+          <textarea id="message" class="form-controls" placeholder="Write your message" name="message" cols="30" rows="10" required></textarea>
+          <input class="form-btn btn common-btn" type="submit" value="Send Message" />
+        </form>
+      </div>
+      <div class="contact-details">
+        <h1 class="greet-heading">My Contact Details</h1>
+        <div class="details">
+          <h5 class="contact-heading">EMAIL</h5>
+          <p class="contact-text">chatjasj@sheridancollege.ca</p>
+        </div>
+        <div class="details">
+          <h5 class="contact-heading">PHONE</h5>
+          <p class="contact-text">+1 (437)-663-8423</p>
+        </div>
+        <div class="details">
+          <h5 class="contact-heading">LinkedIn &amp; GitHub</h5>
+          <a href="https://www.linkedin.com/in/jasjeet-chatha-543911254/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/JasjeetChatha?tab=repositories"><i class="fa-brands fa-square-github"></i></a>
+        </div>
+        <div class="details">
+          <h5 class="contact-heading">ADDRESS</h5>
+          <p class="contact-text">Brampton, ON, Canada</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer-text">
+      &copy; 2023 Jasjeet Singh Chatha. All rights reserved.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
