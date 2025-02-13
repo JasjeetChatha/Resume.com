@@ -2,158 +2,164 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jasjeet Singh Chatha Portfolio</title>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
-          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- New CSS Files -->
-    <link rel="stylesheet" href="projectcss.css" />
-    <link rel="stylesheet" href="responsive.css" />
-  </head>
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jasjeet Singh Chatha Portfolio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS Library for Animations -->
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+  <!-- Animate.css (optional additional animations) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Custom styles for scroll snapping -->
+  <style>
+    html,
+    body {
+      scroll-snap-type: y mandatory;
+      scroll-behavior: smooth;
+      height: 100%;
+      overflow-x: hidden;
+    }
 
-<body>
-  <!-- Navbar header section -->
-  <header class="header">
-    <nav class="navbar">
-      <div class="logo">
-        <h2 class="logo-heading">Jasjeet Singh Chatha</h2>
+    section {
+      scroll-snap-align: start;
+      min-height: 100vh;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+  <!-- Navbar -->
+  <header class="fixed w-full bg-gray-900 text-white z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
+      <h2 class="text-2xl font-bold">Jasjeet Singh Chatha</h2>
+      <nav class="hidden md:flex space-x-8">
+        <a href="#home" class="hover:text-orange-400">Home</a>
+        <a href="#experience" class="hover:text-orange-400">Experience</a>
+        <a href="#projects" class="hover:text-orange-400">Projects</a>
+        <a href="#skills" class="hover:text-orange-400">Technical Skills</a>
+        <a href="#about" class="hover:text-orange-400">About</a>
+        <a href="#contact" class="hover:text-orange-400">Contact</a>
+      </nav>
+      <div class="md:hidden">
+        <button id="hamburger" class="focus:outline-none">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
       </div>
-      <div class="hamburger" id="hamburger">
-        <i class="fas fa-bars hamburger-icon"></i>
-        <i class="fas fa-times cross-icon"></i>
-      </div>
-      <div class="menu">
-        <ul class="menu-list">
-          <li class="menu-list-items"><a class="links" href="#home">Home</a></li>
-          <li class="menu-list-items"><a class="links" href="#experience">Experience</a></li>
-          <li class="menu-list-items"><a class="links" href="#projects">Projects</a></li>
-          <li class="menu-list-items"><a class="links" href="#skills">Technical Skills</a></li>
-          <li class="menu-list-items"><a class="links" href="#about">About</a></li>
-          <li class="menu-list-items"><a class="links" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-gray-900">
+      <ul class="flex flex-col space-y-4 p-4">
+        <li><a href="#home" class="hover:text-orange-400">Home</a></li>
+        <li><a href="#experience" class="hover:text-orange-400">Experience</a></li>
+        <li><a href="#projects" class="hover:text-orange-400">Projects</a></li>
+        <li><a href="#skills" class="hover:text-orange-400">Technical Skills</a></li>
+        <li><a href="#about" class="hover:text-orange-400">About</a></li>
+        <li><a href="#contact" class="hover:text-orange-400">Contact</a></li>
+      </ul>
+    </div>
   </header>
 
-  <!-- Main hero banner -->
-  <section id="home" class="hero">
-    <div class="intro">
-      <div class="headings">
-        <h3 class="greet-heading">Hello, I'm</h3>
-        <h1 class="my-heading">Jasjeet Singh Chatha</h1>
-        <h4 class="sub-heading">
-          Detail-oriented Computer Systems Technology student specializing in system design, cloud computing, and network administration.
-        </h4>
-      </div>
-      <div class="intro-buttons">
-        <button class="btn common-btn"
-          onclick="window.open('https://www.linkedin.com/in/jasjeet-chatha-543911254/', '_blank')">Hire Me</button>
-        <button class="btn ghost-btn" onclick="downloadPDF()">Get Resume</button>
+  <!-- Hero Section -->
+  <section id="home" class="flex items-center justify-center bg-cover bg-center" style="background-image: url('hero-bg.jpg');" data-aos="fade-up">
+    <div class="bg-black bg-opacity-50 w-full h-full flex flex-col items-center justify-center text-center p-4">
+      <h3 class="text-xl text-white mb-2">Hello, I'm</h3>
+      <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Jasjeet Singh Chatha</h1>
+      <h4 class="text-lg md:text-2xl text-white mb-6">
+        Detail-oriented Computer Systems Technology student specializing in system design, cloud computing, and network administration.
+      </h4>
+      <div class="space-x-4">
+        <button onclick="window.open('https://www.linkedin.com/in/jasjeet-chatha-543911254/', '_blank')" class="bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded">
+          Hire Me
+        </button>
+        <button onclick="downloadPDF()" class="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white py-2 px-4 rounded">
+          Get Resume
+        </button>
       </div>
     </div>
   </section>
 
-  <!-- Experience Section -->
-  <section id="experience" class="experience">
-    <div class="experience-heading">
-      <h1 class="my-heading text-center">Work Experience</h1>
-    </div>
-    <div class="experience-content">
-      <div class="experience-card">
-        <h2>Junior Web Developer (Systems &amp; Infrastructure Focus)</h2>
-        <h4>Skill Squirrel | Remote | Sept 2024 – Dec 2024</h4>
-        <ul>
-          <li>Assisted in deploying and configuring cloud-based applications on AWS, contributing to automated deployment pipelines via GitHub CI/CD, reducing deployment cycles by 25%.</li>
-          <li>Collaborated with cross-functional teams to integrate front-end modules with secure back-end services, ensuring system stability and compliance with accessibility standards.</li>
-          <li>Performed in-depth code reviews and debugging sessions, leading to a 20% reduction in post-deployment issues and improved system reliability.</li>
-        </ul>
-      </div>
-      <div class="experience-card">
-        <h2>Web Developer (Infrastructure &amp; Efficiency Enhancements)</h2>
-        <h4>MyKolachi Karahi &amp; BBQ House | Mississauga, Ontario | Jan 2024 – Apr 2024</h4>
-        <ul>
-          <li>Developed a clock-in/out system using ASP.NET and C#, streamlining workforce management and improving operational efficiency by 40%.</li>
-          <li>Enhanced backend processes using Java and MySQL, resulting in a 20% reduction in order processing time and improved system responsiveness.</li>
-          <li>Utilized Agile methodologies and Git for version control, achieving a 95% on-time project milestone rate while ensuring seamless system updates.</li>
-        </ul>
-      </div>
-      <div class="experience-card">
-        <h2>Freelance Web Developer (Capstone Project with Systems Integration)</h2>
-        <h4>Sheridan HR Group | Jan 2025 – Apr 2025</h4>
-        <ul>
-          <li>Collaborated with HR and IT teams to redesign and deploy a client website with integrated e-commerce, invoicing, and service booking systems.</li>
-          <li>Focused on responsive design and backend process optimization to ensure scalable deployment and enhanced user experience.</li>
-        </ul>
+  <!-- Work Experience Section -->
+  <section id="experience" class="py-16 bg-gray-100" data-aos="fade-up">
+    <div class="max-w-7xl mx-auto px-4">
+      <h1 class="text-3xl font-bold text-center mb-12">Work Experience</h1>
+      <div class="space-y-8">
+        <!-- Experience Card 1 -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <h2 class="text-2xl font-semibold">Junior Web Developer (Systems &amp; Infrastructure Focus)</h2>
+          <p class="text-gray-600 mt-1">Skill Squirrel | Remote | Sept 2024 – Dec 2024</p>
+          <ul class="list-disc list-inside mt-4 space-y-2">
+            <li>Assisted in deploying and configuring cloud-based applications on AWS, contributing to automated deployment pipelines via GitHub CI/CD, reducing deployment cycles by 25%.</li>
+            <li>Collaborated with cross-functional teams to integrate front-end modules with secure back-end services, ensuring system stability and compliance with accessibility standards.</li>
+            <li>Performed in-depth code reviews and debugging sessions, leading to a 20% reduction in post-deployment issues and improved system reliability.</li>
+          </ul>
+        </div>
+        <!-- Experience Card 2 -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <h2 class="text-2xl font-semibold">Web Developer (Infrastructure &amp; Efficiency Enhancements)</h2>
+          <p class="text-gray-600 mt-1">MyKolachi Karahi &amp; BBQ House | Mississauga, Ontario | Jan 2024 – Apr 2024</p>
+          <ul class="list-disc list-inside mt-4 space-y-2">
+            <li>Developed a clock-in/out system using ASP.NET and C#, streamlining workforce management and improving operational efficiency by 40%.</li>
+            <li>Enhanced backend processes using Java and MySQL, resulting in a 20% reduction in order processing time and improved system responsiveness.</li>
+            <li>Utilized Agile methodologies and Git for version control, achieving a 95% on-time project milestone rate while ensuring seamless system updates.</li>
+          </ul>
+        </div>
+        <!-- Experience Card 3 -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <h2 class="text-2xl font-semibold">Freelance Web Developer (Capstone Project with Systems Integration)</h2>
+          <p class="text-gray-600 mt-1">Sheridan HR Group | Jan 2025 – Apr 2025</p>
+          <ul class="list-disc list-inside mt-4 space-y-2">
+            <li>Collaborated with HR and IT teams to redesign and deploy a client website with integrated e-commerce, invoicing, and service booking systems.</li>
+            <li>Focused on responsive design and backend process optimization to ensure scalable deployment and enhanced user experience.</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="portfolio">
-    <div class="portfolio-heading">
-      <h1 class="my-heading text-center">Projects</h1>
-    </div>
-    <div class="portfolio-content">
-      <div class="my-row">
-        <div class="my-col">
-          <div class="my-card port-card">
-            <div class="image">
-              <img src="aws_project.png" alt="AWS Cloud-Based Security Project" />
-            </div>
-            <h3 class="greet-heading">AWS Cloud-Based Security Project</h3>
-            <p class="small-para">
-              Deployed AWS EC2 instances using Python automation, implementing firewall configurations and access control policies. Future plans include AWS Lambda integration for automated security responses.
-            </p>
+  <section id="projects" class="py-16 bg-white" data-aos="fade-up">
+    <div class="max-w-7xl mx-auto px-4">
+      <h1 class="text-3xl font-bold text-center mb-12">Projects</h1>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Project Card 1 -->
+        <div class="bg-gray-50 shadow-md rounded-lg overflow-hidden">
+          <img src="aws_project.png" alt="AWS Cloud-Based Security Project" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">AWS Cloud-Based Security Project</h3>
+            <p class="text-gray-600 text-sm">Deployed AWS EC2 instances using Python automation, implementing firewall configurations and access control policies. Future plans include AWS Lambda integration for automated security responses.</p>
           </div>
         </div>
-        <div class="my-col">
-          <div class="my-card port-card">
-            <div class="image">
-              <img src="infra_automation.png" alt="Infrastructure Automation Project" />
-            </div>
-            <h3 class="greet-heading">Infrastructure Automation Project</h3>
-            <p class="small-para">
-              Developing an automated infrastructure deployment using Terraform and Ansible to establish best practices for configuration management and continuous monitoring.
-            </p>
+        <!-- Project Card 2 -->
+        <div class="bg-gray-50 shadow-md rounded-lg overflow-hidden">
+          <img src="infra_automation.png" alt="Infrastructure Automation Project" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Infrastructure Automation Project</h3>
+            <p class="text-gray-600 text-sm">Developing an automated infrastructure deployment using Terraform and Ansible to establish best practices for configuration management and continuous monitoring.</p>
           </div>
         </div>
-        <div class="my-col">
-          <div class="my-card port-card">
-            <div class="image">
-              <img src="student_data.png" alt="Student Data Management System" />
-            </div>
-            <h3 class="greet-heading">Student Data Management System</h3>
-            <p class="small-para">
-              Java-based GUI application that streamlines student record management, reducing data retrieval time by 50% while ensuring secure access with MySQL.
-            </p>
+        <!-- Project Card 3 -->
+        <div class="bg-gray-50 shadow-md rounded-lg overflow-hidden">
+          <img src="student_data.png" alt="Student Data Management System" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Student Data Management System</h3>
+            <p class="text-gray-600 text-sm">Java-based GUI application that streamlines student record management, reducing data retrieval time by 50% while ensuring secure access with MySQL.</p>
           </div>
         </div>
-      </div>
-      <div class="my-row">
-        <div class="my-col">
-          <div class="my-card port-card">
-            <div class="image">
-              <img src="lawyer_info.png" alt="Lawyer Information Management System" />
-            </div>
-            <h3 class="greet-heading">Lawyer Information Management System</h3>
-            <p class="small-para">
-              Secure, role-based access application built with Spring Boot and MySQL, optimizing legal data management and reducing manual entry time by 30%.
-            </p>
+        <!-- Project Card 4 -->
+        <div class="bg-gray-50 shadow-md rounded-lg overflow-hidden">
+          <img src="lawyer_info.png" alt="Lawyer Information Management System" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Lawyer Information Management System</h3>
+            <p class="text-gray-600 text-sm">Secure, role-based access application built with Spring Boot and MySQL, optimizing legal data management and reducing manual entry time by 30%.</p>
           </div>
         </div>
-        <div class="my-col">
-          <div class="my-card port-card">
-            <div class="image">
-              <img src="portfolio_project.png" alt="Portfolio Website" />
-            </div>
-            <h3 class="greet-heading">Portfolio Website</h3>
-            <p class="small-para">
-              Responsive website showcasing projects and secure coding practices to enhance professional online presence.
-            </p>
+        <!-- Project Card 5 -->
+        <div class="bg-gray-50 shadow-md rounded-lg overflow-hidden">
+          <img src="portfolio_project.png" alt="Portfolio Website" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
+            <p class="text-gray-600 text-sm">Responsive website showcasing projects and secure coding practices to enhance professional online presence.</p>
           </div>
         </div>
       </div>
@@ -161,161 +167,150 @@
   </section>
 
   <!-- Technical Skills Section -->
-  <section id="skills" class="services">
-    <div class="services-heading">
-      <h1 class="my-heading text-center">Technical Skills</h1>
-    </div>
-    <div class="services-content">
-      <div class="my-row">
-        <div class="my-col">
-          <div class="my-card">
-            <div class="icon">
-              <i class="fas fa-server"></i>
-            </div>
-            <h3 class="greet-heading white-text">Operating Systems</h3>
-            <p class="small-para">Linux (Ubuntu, CentOS) &amp; Windows Server</p>
-          </div>
+  <section id="skills" class="py-16 bg-gray-100" data-aos="fade-up">
+    <div class="max-w-7xl mx-auto px-4">
+      <h1 class="text-3xl font-bold text-center mb-12">Technical Skills</h1>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Operating Systems -->
+        <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center">
+          <i class="fas fa-server text-4xl text-orange-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Operating Systems</h3>
+          <p class="text-gray-600 text-center">Linux (Ubuntu, CentOS) &amp; Windows Server</p>
         </div>
-        <div class="my-col">
-          <div class="my-card">
-            <div class="icon">
-              <i class="fas fa-cloud"></i>
-            </div>
-            <h3 class="greet-heading white-text">Cloud Platforms</h3>
-            <p class="small-para">AWS (EC2, VPC, IAM), Microsoft Azure</p>
-          </div>
+        <!-- Cloud Platforms -->
+        <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center">
+          <i class="fas fa-cloud text-4xl text-orange-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Cloud Platforms</h3>
+          <p class="text-gray-600 text-center">AWS (EC2, VPC, IAM), Microsoft Azure</p>
         </div>
-        <div class="my-col">
-          <div class="my-card">
-            <div class="icon">
-              <i class="fas fa-box"></i>
-            </div>
-            <h3 class="greet-heading white-text">Virtualization &amp; Containerization</h3>
-            <p class="small-para">Docker, Kubernetes, VMware (fundamentals)</p>
-          </div>
+        <!-- Virtualization & Containerization -->
+        <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center">
+          <i class="fas fa-box text-4xl text-orange-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Virtualization &amp; Containerization</h3>
+          <p class="text-gray-600 text-center">Docker, Kubernetes, VMware (fundamentals)</p>
         </div>
-      </div>
-      <div class="my-row">
-        <div class="my-col">
-          <div class="my-card">
-            <div class="icon">
-              <i class="fas fa-code"></i>
-            </div>
-            <h3 class="greet-heading white-text">Scripting &amp; Automation</h3>
-            <p class="small-para">Python, Bash, (PowerShell in progress)</p>
-          </div>
+        <!-- Scripting & Automation -->
+        <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center">
+          <i class="fas fa-code text-4xl text-orange-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Scripting &amp; Automation</h3>
+          <p class="text-gray-600 text-center">Python, Bash, (PowerShell in progress)</p>
         </div>
-        <div class="my-col">
-          <div class="my-card">
-            <div class="icon">
-              <i class="fas fa-cogs"></i>
-            </div>
-            <h3 class="greet-heading white-text">Infrastructure as Code</h3>
-            <p class="small-para">CI/CD pipelines, Terraform, Ansible</p>
-          </div>
+        <!-- Infrastructure as Code -->
+        <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center">
+          <i class="fas fa-cogs text-4xl text-orange-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Infrastructure as Code</h3>
+          <p class="text-gray-600 text-center">CI/CD pipelines, Terraform, Ansible</p>
         </div>
-        <div class="my-col">
-          <div class="my-card">
-            <div class="icon">
-              <i class="fas fa-lock"></i>
-            </div>
-            <h3 class="greet-heading white-text">Networking &amp; Security</h3>
-            <p class="small-para">TCP/IP, VPN, Firewalls, VLANs, DHCP, DNS</p>
-          </div>
+        <!-- Networking & Security -->
+        <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center">
+          <i class="fas fa-lock text-4xl text-orange-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Networking &amp; Security</h3>
+          <p class="text-gray-600 text-center">TCP/IP, VPN, Firewalls, VLANs, DHCP, DNS</p>
         </div>
-      </div>
-      <div class="my-row">
-        <div class="my-col">
-          <div class="my-card">
-            <div class="icon">
-              <i class="fas fa-database"></i>
-            </div>
-            <h3 class="greet-heading white-text">Database Management</h3>
-            <p class="small-para">MySQL, MongoDB</p>
-          </div>
+        <!-- Database Management -->
+        <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center">
+          <i class="fas fa-database text-4xl text-orange-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Database Management</h3>
+          <p class="text-gray-600 text-center">MySQL, MongoDB</p>
         </div>
-        <div class="my-col">
-          <div class="my-card">
-            <div class="icon">
-              <i class="fab fa-git-alt"></i>
-            </div>
-            <h3 class="greet-heading white-text">Version Control</h3>
-            <p class="small-para">Git, GitHub, Jira</p>
-          </div>
+        <!-- Version Control -->
+        <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center">
+          <i class="fab fa-git-alt text-4xl text-orange-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Version Control</h3>
+          <p class="text-gray-600 text-center">Git, GitHub, Jira</p>
+        </div>
+        <!-- Programming Languages -->
+        <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center">
+          <i class="fas fa-code-branch text-4xl text-orange-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Programming Languages</h3>
+          <p class="text-gray-600 text-center">Java, JavaScript, Python, C#, Node.js, PHP, C, Kotlin</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="about animate">
-    <div class="about-text">
-      <h1 class="my-heading">About Me</h1>
-      <p class="lead-para">
-        I am a detail-oriented Computer Systems Technology student at Sheridan College specializing in system design, cloud computing, and network administration. I have hands-on experience deploying scalable solutions, automating processes, and maintaining secure, efficient environments across Linux and Windows server ecosystems.
-      </p>
-      <p class="lead-para">
-        My current focus includes expanding expertise in configuration management and infrastructure automation using Terraform and Ansible while rapidly developing proficiency in PowerShell scripting.
-      </p>
-      <p class="lead-para">
-        <strong>Education:</strong> Computer Systems Technology – Information System Engineering, Sheridan College (Sept 2022 – Dec 2025) | GPA: 3.55
-      </p>
-      <p class="lead-para">
-        <strong>Certifications:</strong> AWS Certified Cloud Practitioner (In Progress), LinkedIn Learning: Learning the JavaScript Language
-      </p>
-    </div>
-    <div class="about-image">
-      <img src="resume.jpg" alt="Jasjeet Singh Chatha" />
+  <section id="about" class="py-16 bg-white" data-aos="fade-up">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2">
+        <h1 class="text-3xl font-bold mb-4">About Me</h1>
+        <p class="text-gray-600 mb-4">
+          I am a detail-oriented Computer Systems Technology student at Sheridan College specializing in system design, cloud computing, and network administration. I have hands-on experience deploying scalable solutions, automating processes, and maintaining secure, efficient environments across Linux and Windows server ecosystems.
+        </p>
+        <p class="text-gray-600 mb-4">
+          My current focus includes expanding expertise in configuration management and infrastructure automation using Terraform and Ansible while rapidly developing proficiency in PowerShell scripting.
+        </p>
+        <p class="text-gray-600 mb-4">
+          <strong>Education:</strong> Computer Systems Technology – Information System Engineering, Sheridan College (Sept 2022 – Dec 2025) | GPA: 3.55
+        </p>
+        <p class="text-gray-600">
+          <strong>Certifications:</strong> AWS Certified Cloud Practitioner (In Progress), LinkedIn Learning: Learning the JavaScript Language
+        </p>
+      </div>
+      <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+        <img src="resume.jpg" alt="Jasjeet Singh Chatha" class="rounded-lg shadow-lg max-w-sm">
+      </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <div class="contact-heading">
-      <h1 class="my-heading text-center">Contact Me</h1>
-    </div>
-    <div class="contact-content">
-      <div class="contact-form-container">
-        <h1 class="greet-heading">Get In Touch</h1>
-        <form id="contact-form" class="contact-form">
-          <input id="name" class="form-controls" type="text" placeholder="Your Name" required />
-          <input id="email" class="form-controls" type="email" placeholder="Your Email" required />
-          <input id="phone" class="form-controls" type="text" placeholder="Your Phone" required />
-          <textarea id="message" class="form-controls" placeholder="Write your message" name="message" cols="30" rows="10" required></textarea>
-          <input class="form-btn btn common-btn" type="submit" value="Send Message" />
-        </form>
-      </div>
-      <div class="contact-details">
-        <h1 class="greet-heading">My Contact Details</h1>
-        <div class="details">
-          <h5 class="contact-heading">EMAIL</h5>
-          <p class="contact-text">chatjasj@sheridancollege.ca</p>
+  <section id="contact" class="py-16 bg-gray-100" data-aos="fade-up">
+    <div class="max-w-7xl mx-auto px-4">
+      <h1 class="text-3xl font-bold text-center mb-12">Contact Me</h1>
+      <div class="flex flex-col md:flex-row gap-8">
+        <div class="md:w-1/2">
+          <h2 class="text-2xl font-semibold mb-4">Get In Touch</h2>
+          <form id="contact-form" class="space-y-4">
+            <input id="name" class="w-full p-3 border rounded" type="text" placeholder="Your Name" required>
+            <input id="email" class="w-full p-3 border rounded" type="email" placeholder="Your Email" required>
+            <input id="phone" class="w-full p-3 border rounded" type="text" placeholder="Your Phone" required>
+            <textarea id="message" class="w-full p-3 border rounded" placeholder="Write your message" rows="5" required></textarea>
+            <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 rounded">Send Message</button>
+          </form>
         </div>
-        <div class="details">
-          <h5 class="contact-heading">PHONE</h5>
-          <p class="contact-text">+1 (437)-663-8423</p>
-        </div>
-        <div class="details">
-          <h5 class="contact-heading">LinkedIn &amp; GitHub</h5>
-          <a href="https://www.linkedin.com/in/jasjeet-chatha-543911254/"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://github.com/JasjeetChatha?tab=repositories"><i class="fa-brands fa-square-github"></i></a>
-        </div>
-        <div class="details">
-          <h5 class="contact-heading">ADDRESS</h5>
-          <p class="contact-text">Brampton, ON, Canada</p>
+        <div class="md:w-1/2">
+          <h2 class="text-2xl font-semibold mb-4">My Contact Details</h2>
+          <ul class="space-y-4">
+            <li><span class="font-semibold">Email:</span> chatjasj@sheridancollege.ca</li>
+            <li><span class="font-semibold">Phone:</span> +1 (437)-663-8423</li>
+            <li><span class="font-semibold">LinkedIn:</span> <a href="https://www.linkedin.com/in/jasjeet-chatha-543911254/" class="text-orange-500 hover:underline">Profile</a></li>
+            <li><span class="font-semibold">GitHub:</span> <a href="https://github.com/JasjeetChatha?tab=repositories" class="text-orange-500 hover:underline">Repositories</a></li>
+            <li><span class="font-semibold">Address:</span> Brampton, ON, Canada</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
-    <p class="footer-text">
+  <footer class="bg-gray-900 text-white py-4">
+    <div class="max-w-7xl mx-auto px-4 text-center">
       &copy; 2023 Jasjeet Singh Chatha. All rights reserved.
-    </p>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- JavaScript: AOS initialization & Mobile Menu Toggle -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Resume download function
+    function downloadPDF() {
+      window.open('resume.pdf', 'https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:e1dae2f9-aee1-335a-b09b-b43bc5c09df8');
+    }
+  </script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
