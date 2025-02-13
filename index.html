@@ -13,35 +13,35 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- Custom styles for scroll snapping -->
   <style>
-      html {
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-  }
-  body {
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-  }
-  section {
-    scroll-snap-align: start;
-    min-height: 100vh;
-  }
+    html {
+      scroll-snap-type: y mandatory;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+    body {
+      scroll-snap-type: y mandatory;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+    section {
+      scroll-snap-align: start;
+      min-height: 100vh;
+    }
   </style>
 </head>
 
 <body class="bg-gray-100 text-gray-800">
   <!-- Navbar -->
-  <header class="fixed w-full bg-gray-900 text-white z-50">
+  <header class="fixed w-full bg-[#00246B] text-white z-50">
     <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
       <h2 class="text-2xl font-bold">Jasjeet Singh Chatha</h2>
       <nav class="hidden md:flex space-x-8">
-        <a href="#home" class="hover:text-orange-400">Home</a>
-        <a href="#experience" class="hover:text-orange-400">Experience</a>
-        <a href="#projects" class="hover:text-orange-400">Projects</a>
-        <a href="#skills" class="hover:text-orange-400">Technical Skills</a>
-        <a href="#about" class="hover:text-orange-400">About</a>
-        <a href="#contact" class="hover:text-orange-400">Contact</a>
+        <a href="#home" class="hover:text-[#CADCFC]">Home</a>
+        <a href="#experience" class="hover:text-[#CADCFC]">Experience</a>
+        <a href="#projects" class="hover:text-[#CADCFC]">Projects</a>
+        <a href="#skills" class="hover:text-[#CADCFC]">Technical Skills</a>
+        <a href="#about" class="hover:text-[#CADCFC]">About</a>
+        <a href="#contact" class="hover:text-[#CADCFC]">Contact</a>
       </nav>
       <div class="md:hidden">
         <button id="hamburger" class="focus:outline-none">
@@ -50,31 +50,31 @@
       </div>
     </div>
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="md:hidden hidden bg-gray-900">
+    <div id="mobile-menu" class="md:hidden hidden bg-[#00246B]">
       <ul class="flex flex-col space-y-4 p-4">
-        <li><a href="#home" class="hover:text-orange-400">Home</a></li>
-        <li><a href="#experience" class="hover:text-orange-400">Experience</a></li>
-        <li><a href="#projects" class="hover:text-orange-400">Projects</a></li>
-        <li><a href="#skills" class="hover:text-orange-400">Technical Skills</a></li>
-        <li><a href="#about" class="hover:text-orange-400">About</a></li>
-        <li><a href="#contact" class="hover:text-orange-400">Contact</a></li>
+        <li><a href="#home" class="hover:text-[#CADCFC]">Home</a></li>
+        <li><a href="#experience" class="hover:text-[#CADCFC]">Experience</a></li>
+        <li><a href="#projects" class="hover:text-[#CADCFC]">Projects</a></li>
+        <li><a href="#skills" class="hover:text-[#CADCFC]">Technical Skills</a></li>
+        <li><a href="#about" class="hover:text-[#CADCFC]">About</a></li>
+        <li><a href="#contact" class="hover:text-[#CADCFC]">Contact</a></li>
       </ul>
     </div>
   </header>
 
   <!-- Hero Section -->
   <section id="home" class="flex items-center justify-center bg-cover bg-center" style="background-image: url('hero-bg.jpg');" data-aos="fade-up">
-    <div class="bg-black bg-opacity-50 w-full h-full flex flex-col items-center justify-center text-center p-4">
+    <div class="bg-[#00246B] bg-opacity-75 w-full h-full flex flex-col items-center justify-center text-center p-4">
       <h3 class="text-xl text-white mb-2">Hello, I'm</h3>
       <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Jasjeet Singh Chatha</h1>
       <h4 class="text-lg md:text-2xl text-white mb-6">
         Detail-oriented Computer Systems Technology student specializing in system design, cloud computing, and network administration.
       </h4>
       <div class="space-x-4">
-        <button onclick="window.open('https://www.linkedin.com/in/jasjeet-chatha-543911254/', '_blank')" class="bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded">
+        <button onclick="window.open('https://www.linkedin.com/in/jasjeet-chatha-543911254/', '_blank')" class="bg-[#00246B] hover:bg-[#001C55] text-white py-2 px-4 rounded">
           Hire Me
         </button>
-        <button onclick="downloadPDF()" class="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white py-2 px-4 rounded">
+        <button onclick="downloadPDF()" class="border border-[#00246B] text-[#00246B] hover:bg-[#00246B] hover:text-white py-2 px-4 rounded">
           Get Resume
         </button>
       </div>
@@ -82,7 +82,7 @@
   </section>
 
   <!-- Work Experience Section -->
-  <section id="experience" class="py-16 bg-gray-100" data-aos="fade-up">
+  <section id="experience" class="py-16 bg-[#CADCFC]" data-aos="fade-up">
     <div class="max-w-7xl mx-auto px-4">
       <h1 class="text-3xl font-bold text-center mb-12">Work Experience</h1>
       <div class="space-y-8">
@@ -125,31 +125,31 @@
       <h1 class="text-3xl font-bold text-center mb-12">Projects</h1>
       <div class="grid md:grid-cols-3 gap-8">
         <!-- Project Card 1 -->
-        <div class="bg-gray-50 shadow-md rounded-lg overflow-hidden">
-          <img src="aws_project.png" alt="AWS Cloud-Based Security Project" class="w-full h-48 object-cover">
+        <div class="bg-[#CADCFC] shadow-md rounded-lg overflow-hidden">
+          <img src="aws.png" alt="AWS Cloud-Based Security Project" class="w-full h-48 object-cover">
           <div class="p-4">
             <h3 class="text-xl font-semibold mb-2">AWS Cloud-Based Security Project</h3>
             <p class="text-gray-600 text-sm">Deployed AWS EC2 instances using Python automation, implementing firewall configurations and access control policies. Future plans include AWS Lambda integration for automated security responses.</p>
           </div>
         </div>
         <!-- Project Card 2 -->
-        <div class="bg-gray-50 shadow-md rounded-lg overflow-hidden">
-          <img src="infra_automation.png" alt="Infrastructure Automation Project" class="w-full h-48 object-cover">
+        <div class="bg-[#CADCFC] shadow-md rounded-lg overflow-hidden">
+          <img src="Cloud-Infrastructure-Automation.jpg" alt="Infrastructure Automation Project" class="w-full h-48 object-cover">
           <div class="p-4">
             <h3 class="text-xl font-semibold mb-2">Infrastructure Automation Project</h3>
             <p class="text-gray-600 text-sm">Developing an automated infrastructure deployment using Terraform and Ansible to establish best practices for configuration management and continuous monitoring.</p>
           </div>
         </div>
         <!-- Project Card 3 -->
-        <div class="bg-gray-50 shadow-md rounded-lg overflow-hidden">
-          <img src="student_data.png" alt="Student Data Management System" class="w-full h-48 object-cover">
+        <div class="bg-[#CADCFC] shadow-md rounded-lg overflow-hidden">
+          <img src="image.png" alt="Student Data Management System" class="w-full h-48 object-cover">
           <div class="p-4">
             <h3 class="text-xl font-semibold mb-2">Student Data Management System</h3>
             <p class="text-gray-600 text-sm">Java-based GUI application that streamlines student record management, reducing data retrieval time by 50% while ensuring secure access with MySQL.</p>
           </div>
         </div>
         <!-- Project Card 4 -->
-        <div class="bg-gray-50 shadow-md rounded-lg overflow-hidden">
+        <div class="bg-[#CADCFC] shadow-md rounded-lg overflow-hidden">
           <img src="lawyer_info.png" alt="Lawyer Information Management System" class="w-full h-48 object-cover">
           <div class="p-4">
             <h3 class="text-xl font-semibold mb-2">Lawyer Information Management System</h3>
@@ -157,7 +157,7 @@
           </div>
         </div>
         <!-- Project Card 5 -->
-        <div class="bg-gray-50 shadow-md rounded-lg overflow-hidden">
+        <div class="bg-[#CADCFC] shadow-md rounded-lg overflow-hidden">
           <img src="portfolio_project.png" alt="Portfolio Website" class="w-full h-48 object-cover">
           <div class="p-4">
             <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
@@ -169,61 +169,61 @@
   </section>
 
   <!-- Technical Skills Section -->
-  <section id="skills" class="py-16 bg-gray-100" data-aos="fade-up">
+  <section id="skills" class="py-16 bg-[#CADCFC]" data-aos="fade-up">
     <div class="max-w-7xl mx-auto px-4">
       <h1 class="text-3xl font-bold text-center mb-12">Technical Skills</h1>
       <div class="grid md:grid-cols-3 gap-8">
         <!-- Operating Systems -->
         <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center">
-          <i class="fas fa-server text-4xl text-orange-500 mb-4"></i>
+          <i class="fas fa-server text-4xl text-[#00246B] mb-4"></i>
           <h3 class="text-xl font-semibold mb-2">Operating Systems</h3>
           <p class="text-gray-600 text-center">Linux (Ubuntu, CentOS) &amp; Windows Server</p>
         </div>
         <!-- Cloud Platforms -->
         <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center">
-          <i class="fas fa-cloud text-4xl text-orange-500 mb-4"></i>
+          <i class="fas fa-cloud text-4xl text-[#00246B] mb-4"></i>
           <h3 class="text-xl font-semibold mb-2">Cloud Platforms</h3>
           <p class="text-gray-600 text-center">AWS (EC2, VPC, IAM), Microsoft Azure</p>
         </div>
         <!-- Virtualization & Containerization -->
         <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center">
-          <i class="fas fa-box text-4xl text-orange-500 mb-4"></i>
+          <i class="fas fa-box text-4xl text-[#00246B] mb-4"></i>
           <h3 class="text-xl font-semibold mb-2">Virtualization &amp; Containerization</h3>
           <p class="text-gray-600 text-center">Docker, Kubernetes, VMware (fundamentals)</p>
         </div>
         <!-- Scripting & Automation -->
         <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center">
-          <i class="fas fa-code text-4xl text-orange-500 mb-4"></i>
+          <i class="fas fa-code text-4xl text-[#00246B] mb-4"></i>
           <h3 class="text-xl font-semibold mb-2">Scripting &amp; Automation</h3>
           <p class="text-gray-600 text-center">Python, Bash, (PowerShell in progress)</p>
         </div>
         <!-- Infrastructure as Code -->
         <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center">
-          <i class="fas fa-cogs text-4xl text-orange-500 mb-4"></i>
+          <i class="fas fa-cogs text-4xl text-[#00246B] mb-4"></i>
           <h3 class="text-xl font-semibold mb-2">Infrastructure as Code</h3>
           <p class="text-gray-600 text-center">CI/CD pipelines, Terraform, Ansible</p>
         </div>
         <!-- Networking & Security -->
         <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center">
-          <i class="fas fa-lock text-4xl text-orange-500 mb-4"></i>
+          <i class="fas fa-lock text-4xl text-[#00246B] mb-4"></i>
           <h3 class="text-xl font-semibold mb-2">Networking &amp; Security</h3>
           <p class="text-gray-600 text-center">TCP/IP, VPN, Firewalls, VLANs, DHCP, DNS</p>
         </div>
         <!-- Database Management -->
         <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center">
-          <i class="fas fa-database text-4xl text-orange-500 mb-4"></i>
+          <i class="fas fa-database text-4xl text-[#00246B] mb-4"></i>
           <h3 class="text-xl font-semibold mb-2">Database Management</h3>
           <p class="text-gray-600 text-center">MySQL, MongoDB</p>
         </div>
         <!-- Version Control -->
         <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center">
-          <i class="fab fa-git-alt text-4xl text-orange-500 mb-4"></i>
+          <i class="fab fa-git-alt text-4xl text-[#00246B] mb-4"></i>
           <h3 class="text-xl font-semibold mb-2">Version Control</h3>
           <p class="text-gray-600 text-center">Git, GitHub, Jira</p>
         </div>
         <!-- Programming Languages -->
         <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center">
-          <i class="fas fa-code-branch text-4xl text-orange-500 mb-4"></i>
+          <i class="fas fa-code-branch text-4xl text-[#00246B] mb-4"></i>
           <h3 class="text-xl font-semibold mb-2">Programming Languages</h3>
           <p class="text-gray-600 text-center">Java, JavaScript, Python, C#, Node.js, PHP, C, Kotlin</p>
         </div>
@@ -256,7 +256,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-16 bg-gray-100" data-aos="fade-up">
+  <section id="contact" class="py-16 bg-[#CADCFC]" data-aos="fade-up">
     <div class="max-w-7xl mx-auto px-4">
       <h1 class="text-3xl font-bold text-center mb-12">Contact Me</h1>
       <div class="flex flex-col md:flex-row gap-8">
@@ -267,7 +267,7 @@
             <input id="email" class="w-full p-3 border rounded" type="email" placeholder="Your Email" required>
             <input id="phone" class="w-full p-3 border rounded" type="text" placeholder="Your Phone" required>
             <textarea id="message" class="w-full p-3 border rounded" placeholder="Write your message" rows="5" required></textarea>
-            <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 rounded">Send Message</button>
+            <button type="submit" class="w-full bg-[#00246B] hover:bg-[#001C55] text-white py-3 rounded">Send Message</button>
           </form>
         </div>
         <div class="md:w-1/2">
@@ -275,8 +275,8 @@
           <ul class="space-y-4">
             <li><span class="font-semibold">Email:</span> chatjasj@sheridancollege.ca</li>
             <li><span class="font-semibold">Phone:</span> +1 (437)-663-8423</li>
-            <li><span class="font-semibold">LinkedIn:</span> <a href="https://www.linkedin.com/in/jasjeet-chatha-543911254/" class="text-orange-500 hover:underline">Profile</a></li>
-            <li><span class="font-semibold">GitHub:</span> <a href="https://github.com/JasjeetChatha?tab=repositories" class="text-orange-500 hover:underline">Repositories</a></li>
+            <li><span class="font-semibold">LinkedIn:</span> <a href="https://www.linkedin.com/in/jasjeet-chatha-543911254/" class="text-[#00246B] hover:underline">Profile</a></li>
+            <li><span class="font-semibold">GitHub:</span> <a href="https://github.com/JasjeetChatha?tab=repositories" class="text-[#00246B] hover:underline">Repositories</a></li>
             <li><span class="font-semibold">Address:</span> Brampton, ON, Canada</li>
           </ul>
         </div>
@@ -285,7 +285,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-4">
+  <footer class="bg-[#00246B] text-white py-4">
     <div class="max-w-7xl mx-auto px-4 text-center">
       &copy; 2023 Jasjeet Singh Chatha. All rights reserved.
     </div>
@@ -308,7 +308,7 @@
 
     // Resume download function
     function downloadPDF() {
-      window.open('resume.pdf', 'https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:e1dae2f9-aee1-335a-b09b-b43bc5c09df8');
+      window.open('resume.pdf', '_blank');
     }
   </script>
   <!-- Font Awesome -->
