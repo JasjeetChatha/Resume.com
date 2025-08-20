@@ -1,4 +1,3 @@
-import { Analytics } from "@vercel/analytics/next"
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,8 +35,9 @@ import { Analytics } from "@vercel/analytics/next"
   <header class="fixed w-full bg-[#00246B] text-white z-50">
     <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
       <h2 class="text-2xl font-bold">Jasjeet Singh Chatha</h2>
-      <nav class="hidden md:flex space-x-8">
+      <nav class="hidden md:flex space-x-6">
         <a href="#home" class="hover:text-[#CADCFC]">Home</a>
+        <a href="#education" class="hover:text-[#CADCFC]">Education</a>
         <a href="#experience" class="hover:text-[#CADCFC]">Experience</a>
         <a href="#projects" class="hover:text-[#CADCFC]">Projects</a>
         <a href="#skills" class="hover:text-[#CADCFC]">Technical Skills</a>
@@ -54,6 +54,7 @@ import { Analytics } from "@vercel/analytics/next"
     <div id="mobile-menu" class="md:hidden hidden bg-[#00246B]">
       <ul class="flex flex-col space-y-4 p-4">
         <li><a href="#home" class="hover:text-[#CADCFC]">Home</a></li>
+        <li><a href="#education" class="hover:text-[#CADCFC]">Education</a></li>
         <li><a href="#experience" class="hover:text-[#CADCFC]">Experience</a></li>
         <li><a href="#projects" class="hover:text-[#CADCFC]">Projects</a></li>
         <li><a href="#skills" class="hover:text-[#CADCFC]">Technical Skills</a></li>
@@ -69,18 +70,107 @@ import { Analytics } from "@vercel/analytics/next"
       <h3 class="text-xl text-white mb-2">Hello, I'm</h3>
       <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Jasjeet Singh Chatha</h1>
       <h4 class="text-lg md:text-2xl text-white mb-6">
-        Detail-oriented Computer Systems Technology student specializing in system design, cloud computing, and network administration.
+        Computer Programming Student & Full-Stack Developer specializing in enterprise applications, cloud computing, and system administration.
       </h4>
       <div class="space-x-4">
         <button onclick="window.open('https://www.linkedin.com/in/jasjeet-chatha-543911254/', '_blank')" class="bg-[#00246B] hover:bg-[#001C55] text-white py-2 px-4 rounded">
           Hire Me
         </button>
-        <button  class="bg-[#00246B] text-white font-semibold py-2 px-4 rounded-lg transition duration-300 hover:bg-[#CADCFC] hover:text-[#00246B]">
-        <a href="https://github.com/JasjeetChatha/Resume.com/raw/Hello/Jasjeet_Singh_Chatha_Resume.pdf" 
-   download="Jasjeet_Singh_Chatha_Resume.pdf">
-   Get Resume
-</a></button>
+        <button class="bg-[#00246B] text-white font-semibold py-2 px-4 rounded-lg transition duration-300 hover:bg-[#CADCFC] hover:text-[#00246B]">
+          <a href="https://github.com/JasjeetChatha/Resume.com/raw/Hello/Jasjeet_Singh_Chatha_Resume.pdf" 
+             download="Jasjeet_Singh_Chatha_Resume.pdf">
+             Get Resume
+          </a>
+        </button>
+      </div>
+    </div>
+  </section>
 
+  <!-- Education Section -->
+  <section id="education" class="py-16 bg-white" data-aos="fade-up">
+    <div class="max-w-7xl mx-auto px-4">
+      <h1 class="text-3xl font-bold text-center mb-12">Education</h1>
+      
+      <!-- Main Education Card -->
+      <div class="bg-[#CADCFC] shadow-lg rounded-lg p-8 mb-12">
+        <div class="text-center mb-8">
+          <h2 class="text-2xl font-bold text-[#00246B] mb-2">Computer Programming - Advanced Diploma</h2>
+          <p class="text-lg text-gray-700">Sheridan College | Sept 2022 – Dec 2025 | GPA: 3.55</p>
+          <p class="text-md text-gray-600 mt-2">Currently completing final semester - 30+ comprehensive courses in full-stack development, enterprise applications, and cloud computing</p>
+        </div>
+
+        <!-- Academic Journey -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div class="bg-white rounded-lg p-4 shadow-md">
+            <h3 class="text-lg font-semibold text-[#00246B] mb-2">Foundation</h3>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>• Object-Oriented Programming (Java)</li>
+              <li>• Web Development (HTML5/CSS3)</li>
+              <li>• Computer Math & Logic</li>
+              <li>• Data Communications</li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-lg p-4 shadow-md">
+            <h3 class="text-lg font-semibold text-[#00246B] mb-2">Core Development</h3>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>• Advanced Java & Frameworks</li>
+              <li>• Full-Stack Web (Node.js/MySQL)</li>
+              <li>• Linux/UNIX Administration</li>
+              <li>• UI/UX Design Principles</li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-lg p-4 shadow-md">
+            <h3 class="text-lg font-semibold text-[#00246B] mb-2">Specialization</h3>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>• Enterprise Java Development</li>
+              <li>• Mobile App Development</li>
+              <li>• Cloud Architecture & Deployment</li>
+              <li>• Database Design & Big Data</li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-lg p-4 shadow-md">
+            <h3 class="text-lg font-semibold text-[#00246B] mb-2">Professional</h3>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>• Software Engineering Practices</li>
+              <li>• Project Management (PMP)</li>
+              <li>• IT Service Management (ITIL)</li>
+              <li>• Security & Network Administration</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Key Projects & Achievements -->
+        <div class="bg-white rounded-lg p-6 shadow-md">
+          <h3 class="text-xl font-semibold text-[#00246B] mb-4">Academic Achievements & Key Projects</h3>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <h4 class="font-semibold text-gray-800 mb-2">Enterprise Applications</h4>
+              <p class="text-sm text-gray-600">Developed comprehensive web applications using Java Enterprise platform with secure database integration and cloud deployment</p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-800 mb-2">Mobile Development</h4>
+              <p class="text-sm text-gray-600">Created cross-platform mobile applications using Android SDK and hybrid frameworks with advanced UI/UX features</p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-800 mb-2">Cloud Infrastructure</h4>
+              <p class="text-sm text-gray-600">Designed and deployed scalable cloud architectures with serverless applications and automated CI/CD pipelines</p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-800 mb-2">Technical Leadership</h4>
+              <p class="text-sm text-gray-600">Led group projects in software engineering, conducted code reviews, and mentored peers in development best practices</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="text-center">
+        <h3 class="text-xl font-semibold mb-4">Certifications & Professional Development</h3>
+        <div class="flex flex-wrap justify-center gap-4">
+          <span class="bg-[#00246B] text-white px-4 py-2 rounded-lg text-sm">AWS Certified Cloud Practitioner (In Progress)</span>
+          <span class="bg-[#00246B] text-white px-4 py-2 rounded-lg text-sm">LinkedIn Learning: JavaScript Language</span>
+          <span class="bg-[#00246B] text-white px-4 py-2 rounded-lg text-sm">Project Management Professional (PMP) Principles</span>
+        </div>
       </div>
     </div>
   </section>
@@ -88,11 +178,11 @@ import { Analytics } from "@vercel/analytics/next"
   <!-- Work Experience Section -->
   <section id="experience" class="py-16 bg-[#CADCFC]" data-aos="fade-up">
     <div class="max-w-7xl mx-auto px-4">
-      <h1 class="text-3xl font-bold text-center mb-12">Work Experience</h1>
+      <h1 class="text-3xl font-bold text-center mb-12">Professional Experience</h1>
       <div class="space-y-8">
         <!-- Experience Card 1 -->
         <div class="bg-white shadow-md rounded-lg p-6 transition transform duration-300 hover:scale-105 hover:shadow-xl">
-          <h2 class="text-2xl font-semibold">Junior Web Developer (Systems &amp; Infrastructure Focus)</h2>
+          <h2 class="text-2xl font-semibold">Junior Web Developer (Systems & Infrastructure Focus)</h2>
           <p class="text-gray-600 mt-1">Skill Squirrel | Remote | Sept 2024 – Dec 2024</p>
           <ul class="list-disc list-inside mt-4 space-y-2">
             <li>Assisted in deploying and configuring cloud-based applications on AWS, contributing to automated deployment pipelines via GitHub CI/CD, reducing deployment cycles by 25%.</li>
@@ -102,8 +192,8 @@ import { Analytics } from "@vercel/analytics/next"
         </div>
         <!-- Experience Card 2 -->
         <div class="bg-white shadow-md rounded-lg p-6 transition transform duration-300 hover:scale-105 hover:shadow-xl">
-          <h2 class="text-2xl font-semibold">Web Developer (Infrastructure &amp; Efficiency Enhancements)</h2>
-          <p class="text-gray-600 mt-1">MyKolachi Karahi &amp; BBQ House | Mississauga, Ontario | Jan 2024 – Apr 2024</p>
+          <h2 class="text-2xl font-semibold">Web Developer (Infrastructure & Efficiency Enhancements)</h2>
+          <p class="text-gray-600 mt-1">MyKolachi Karahi & BBQ House | Mississauga, Ontario | Jan 2024 – Apr 2024</p>
           <ul class="list-disc list-inside mt-4 space-y-2">
             <li>Developed a clock-in/out system using ASP.NET and C#, streamlining workforce management and improving operational efficiency by 40%.</li>
             <li>Enhanced backend processes using Java and MySQL, resulting in a 20% reduction in order processing time and improved system responsiveness.</li>
@@ -126,7 +216,7 @@ import { Analytics } from "@vercel/analytics/next"
   <!-- Projects Section -->
   <section id="projects" class="py-16 bg-white" data-aos="fade-up">
     <div class="max-w-7xl mx-auto px-4">
-      <h1 class="text-3xl font-bold text-center mb-12">Projects</h1>
+      <h1 class="text-3xl font-bold text-center mb-12">Featured Projects</h1>
       <div class="grid md:grid-cols-3 gap-8">
         <!-- Project Card 1 -->
         <div class="bg-[#CADCFC] shadow-md rounded-lg overflow-hidden transition transform duration-300 hover:scale-105 hover:shadow-xl">
@@ -136,18 +226,16 @@ import { Analytics } from "@vercel/analytics/next"
             <p class="text-gray-600 text-sm">Deployed AWS EC2 instances using Python automation, implementing firewall configurations and access control policies. Future plans include AWS Lambda integration for automated security responses.</p>
           </div>
         </div>
-       <!-- Project Card 2 -->
+        <!-- Project Card 2 -->
         <a href="https://www.linkedin.com/posts/jasjeet-chatha-543911254_built-my-own-youtube-music-playlist-downloader-activity-7350727982887448576-HuHn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD7IhsMBUK-us8cJqsINajOD28boUUl9ij8" target="_blank" rel="noopener noreferrer">
-<div class="bg-[#CADCFC] shadow-md rounded-lg overflow-hidden transition transform duration-300 hover:scale-105 hover:shadow-xl">
-  <img src="playlistdownloader.jpeg" alt="YouTube Music Playlist Downloader" class="w-full h-48 object-cover">
-  <div class="p-4">
-    <h3 class="text-xl font-semibold mb-2">YouTube Music Playlist Downloader</h3>
-    <p class="text-gray-600 text-sm">
-      Built a simple Python app with a GUI to download YouTube Music playlists offline without Premium. Designed for personal use, it’s reliable, hassle-free, and powered by yt-dlp. Next up: progress bar and format options!
-    </p>
-  </div>
-</div>
-</a>
+          <div class="bg-[#CADCFC] shadow-md rounded-lg overflow-hidden transition transform duration-300 hover:scale-105 hover:shadow-xl">
+            <img src="playlistdownloader.jpeg" alt="YouTube Music Playlist Downloader" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">YouTube Music Playlist Downloader</h3>
+              <p class="text-gray-600 text-sm">Built a simple Python app with a GUI to download YouTube Music playlists offline without Premium. Designed for personal use, it's reliable, hassle-free, and powered by yt-dlp.</p>
+            </div>
+          </div>
+        </a>
         <!-- Project Card 3 -->
         <div class="bg-[#CADCFC] shadow-md rounded-lg overflow-hidden transition transform duration-300 hover:scale-105 hover:shadow-xl">
           <img src="image.png" alt="Student Data Management System" class="w-full h-48 object-cover">
@@ -165,176 +253,157 @@ import { Analytics } from "@vercel/analytics/next"
           </div>
         </div>
         <!-- Project Card 5 -->
-         <a href="https://jasjeetchatha.github.io/Resume.com/" target="_blank" rel="noopener noreferrer">
-        <div class="bg-[#CADCFC] shadow-md rounded-lg overflow-hidden transition transform duration-300 hover:scale-105 hover:shadow-xl">
-          <img src="portfolio.png" alt="Portfolio Website" class="w-full h-48 object-cover">
-          <div class="p-4">
-            <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
-            <p class="text-gray-600 text-sm">Responsive website showcasing projects and secure coding practices to enhance professional online presence.</p>
+        <a href="https://jasjeetchatha.github.io/Resume.com/" target="_blank" rel="noopener noreferrer">
+          <div class="bg-[#CADCFC] shadow-md rounded-lg overflow-hidden transition transform duration-300 hover:scale-105 hover:shadow-xl">
+            <img src="portfolio.png" alt="Portfolio Website" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
+              <p class="text-gray-600 text-sm">Responsive website showcasing projects and secure coding practices to enhance professional online presence.</p>
+            </div>
           </div>
-        </div>
         </a>
         <!-- Project Card 6 -->
-<a href="https://e-store-dun-tau.vercel.app/" target="_blank" rel="noopener noreferrer">
-  <div class="bg-[#CADCFC] shadow-md rounded-lg overflow-hidden transition transform duration-300 hover:scale-105 hover:shadow-xl">
-    <img src="ecomerce.png" alt="Full-Stack E-commerce Website" class="w-full h-48 object-cover">
-    <div class="p-4">
-      <h3 class="text-xl font-semibold mb-2">Full-Stack E-commerce Website (MERN)</h3>
-      <p class="text-gray-600 text-sm">
-        A passion project I’m building from scratch using the MERN stack. It features product listings, add-to-cart functionality, and dynamic routing. The frontend is live on Vercel, and I’m actively working on the backend APIs and database. This one’s all about learning by doing — solving real-world problems and leveling up my full-stack skills in the process.
-      </p>
-    </div>
-  </div>
-</a>
-
+        <a href="https://e-store-dun-tau.vercel.app/" target="_blank" rel="noopener noreferrer">
+          <div class="bg-[#CADCFC] shadow-md rounded-lg overflow-hidden transition transform duration-300 hover:scale-105 hover:shadow-xl">
+            <img src="ecomerce.png" alt="Full-Stack E-commerce Website" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Full-Stack E-commerce Website (MERN)</h3>
+              <p class="text-gray-600 text-sm">A comprehensive e-commerce platform built from scratch using the MERN stack with product listings, cart functionality, and dynamic routing. Currently developing backend APIs and database integration.</p>
+            </div>
+          </div>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Technical Skills Section -->
+  <!-- Enhanced Technical Skills Section -->
   <section id="skills" class="py-16 bg-[#CADCFC]" data-aos="fade-up">
     <div class="max-w-7xl mx-auto px-4">
-      <h1 class="text-3xl font-bold text-center mb-12">Technical Skills</h1>
-      <div class="grid md:grid-cols-3 gap-8">
-        <!-- Operating Systems -->
-        <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
-          <i class="fas fa-server text-4xl text-[#00246B] mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Operating Systems</h3>
-          <p class="text-gray-600 text-center">Linux (Ubuntu, CentOS) &amp; Windows Server</p>
-        </div>
-        <!-- Cloud Platforms -->
-        <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
-          <i class="fas fa-cloud text-4xl text-[#00246B] mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Cloud Platforms</h3>
-          <p class="text-gray-600 text-center">AWS (EC2, VPC, IAM), Microsoft Azure</p>
-        </div>
-        <!-- Virtualization & Containerization -->
-        <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
-          <i class="fas fa-box text-4xl text-[#00246B] mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Virtualization &amp; Containerization</h3>
-          <p class="text-gray-600 text-center">Docker, Kubernetes, VMware (fundamentals)</p>
-        </div>
-        <!-- Scripting & Automation -->
-        <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
-          <i class="fas fa-code text-4xl text-[#00246B] mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Scripting &amp; Automation</h3>
-          <p class="text-gray-600 text-center">Python, Bash, (PowerShell in progress)</p>
-        </div>
-        <!-- Infrastructure as Code -->
-        <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
-          <i class="fas fa-cogs text-4xl text-[#00246B] mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Infrastructure as Code</h3>
-          <p class="text-gray-600 text-center">CI/CD pipelines, Terraform, Ansible</p>
-        </div>
-        <!-- Networking & Security -->
-        <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
-          <i class="fas fa-lock text-4xl text-[#00246B] mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Networking &amp; Security</h3>
-          <p class="text-gray-600 text-center">TCP/IP, VPN, Firewalls, VLANs, DHCP, DNS</p>
-        </div>
-        <!-- Database Management -->
-        <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
-          <i class="fas fa-database text-4xl text-[#00246B] mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Database Management</h3>
-          <p class="text-gray-600 text-center">MySQL, MongoDB</p>
-        </div>
-        <!-- Version Control -->
-        <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
-          <i class="fab fa-git-alt text-4xl text-[#00246B] mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Version Control</h3>
-          <p class="text-gray-600 text-center">Git, GitHub, Jira</p>
-        </div>
-        <!-- Programming Languages -->
-        <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
-          <i class="fas fa-code-branch text-4xl text-[#00246B] mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Programming Languages</h3>
-          <p class="text-gray-600 text-center">Java, JavaScript, Python, C#, Node.js, PHP, C, Kotlin</p>
+      <h1 class="text-3xl font-bold text-center mb-12">Technical Skills & Expertise</h1>
+      
+      <!-- Programming Languages -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-semibold text-center mb-8">Programming Languages</h2>
+        <div class="grid md:grid-cols-4 gap-6">
+          <div class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
+            <i class="fab fa-java text-4xl text-[#00246B] mb-2"></i>
+            <h3 class="text-lg font-semibold">Java</h3>
+            <p class="text-sm text-gray-600 text-center">Advanced OOP, Enterprise Development</p>
+          </div>
+          <div class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
+            <i class="fab fa-js-square text-4xl text-[#00246B] mb-2"></i>
+            <h3 class="text-lg font-semibold">JavaScript/Node.js</h3>
+            <p class="text-sm text-gray-600 text-center">Full-Stack Development, APIs</p>
+          </div>
+          <div class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
+            <i class="fas fa-code text-4xl text-[#00246B] mb-2"></i>
+            <h3 class="text-lg font-semibold">C# / .NET</h3>
+            <p class="text-sm text-gray-600 text-center">Desktop & Web Applications</p>
+          </div>
+          <div class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
+            <i class="fab fa-python text-4xl text-[#00246B] mb-2"></i>
+            <h3 class="text-lg font-semibold">Python</h3>
+            <p class="text-sm text-gray-600 text-center">Scripting, Automation, Data Structures</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- About Section -->
-  <section id="about" class="py-16 bg-white" data-aos="fade-up">
-    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center">
-      <div class="md:w-1/2">
-        <h1 class="text-3xl font-bold mb-4">About Me</h1>
-        <p class="text-gray-600 mb-4">
-          I am a detail-oriented Computer Systems Technology student at Sheridan College specializing in system design, cloud computing, and network administration. I have hands-on experience deploying scalable solutions, automating processes, and maintaining secure, efficient environments across Linux and Windows server ecosystems.
-        </p>
-        <p class="text-gray-600 mb-4">
-          My current focus includes expanding expertise in configuration management and infrastructure automation using Terraform and Ansible while rapidly developing proficiency in PowerShell scripting.
-        </p>
-        <p class="text-gray-600 mb-4">
-          <strong>Education:</strong> Computer Systems Technology – Information System Engineering, Sheridan College (Sept 2022 – Dec 2025) | GPA: 3.55
-        </p>
-        <p class="text-gray-600">
-          <strong>Certifications:</strong> AWS Certified Cloud Practitioner (In Progress), LinkedIn Learning: Learning the JavaScript Language
-        </p>
-      </div>
-      <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-16 bg-[#CADCFC]" data-aos="fade-up">
-    <div class="max-w-7xl mx-auto px-4">
-      <h1 class="text-3xl font-bold text-center mb-12">Contact Me</h1>
-      <div class="flex flex-col md:flex-row gap-8">
-        <div class="md:w-1/2">
-          <h2 class="text-2xl font-semibold mb-4">Get In Touch</h2>
-          <form id="contact-form" class="space-y-4">
-            <input id="name" class="w-full p-3 border rounded" type="text" placeholder="Your Name" required>
-            <input id="email" class="w-full p-3 border rounded" type="email" placeholder="Your Email" required>
-            <input id="phone" class="w-full p-3 border rounded" type="text" placeholder="Your Phone" required>
-            <textarea id="message" class="w-full p-3 border rounded" placeholder="Write your message" rows="5" required></textarea>
-            <button type="submit" class="w-full bg-[#00246B] hover:bg-[#001C55] text-white py-3 rounded">Send Message</button>
-          </form>
-        </div>
-        <div class="md:w-1/2">
-          <h2 class="text-2xl font-semibold mb-4">My Contact Details</h2>
-          <ul class="space-y-4">
-            <li><span class="font-semibold">Email:</span> chatjasj@sheridancollege.ca</li>
-            <li><span class="font-semibold">Phone:</span> +1 (437)-663-8423</li>
-            <li><span class="font-semibold">LinkedIn:</span> <a href="https://www.linkedin.com/in/jasjeet-chatha-543911254/" class="text-[#00246B] hover:underline">Profile</a></li>
-            <li><span class="font-semibold">GitHub:</span> <a href="https://github.com/JasjeetChatha?tab=repositories" class="text-[#00246B] hover:underline">Repositories</a></li>
-            <li><span class="font-semibold">Address:</span> Brampton, ON, Canada</li>
-          </ul>
+      <!-- Web Technologies -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-semibold text-center mb-8">Web Development Stack</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
+            <i class="fab fa-html5 text-4xl text-[#00246B] mb-2"></i>
+            <h3 class="text-lg font-semibold">Frontend Technologies</h3>
+            <p class="text-sm text-gray-600 text-center">HTML5, CSS3, JavaScript, React, Angular</p>
+          </div>
+          <div class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
+            <i class="fas fa-server text-4xl text-[#00246B] mb-2"></i>
+            <h3 class="text-lg font-semibold">Backend Development</h3>
+            <p class="text-sm text-gray-600 text-center">Node.js, Express.js, Spring Framework, ASP.NET</p>
+          </div>
+          <div class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
+            <i class="fas fa-mobile-alt text-4xl text-[#00246B] mb-2"></i>
+            <h3 class="text-lg font-semibold">Mobile Development</h3>
+            <p class="text-sm text-gray-600 text-center">Android SDK, Ionic, Hybrid Apps, Kotlin</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="bg-[#00246B] text-white py-4">
-    <div class="max-w-7xl mx-auto px-4 text-center">
-      &copy; 2023 Jasjeet Singh Chatha. All rights reserved.
-    </div>
-  </footer>
+      <!-- Infrastructure & Cloud -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-semibold text-center mb-8">Infrastructure & Cloud Technologies</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
+            <i class="fas fa-cloud text-4xl text-[#00246B] mb-2"></i>
+            <h3 class="text-lg font-semibold">Cloud Platforms</h3>
+            <p class="text-sm text-gray-600 text-center">AWS (EC2, VPC, IAM), Azure, Serverless Architecture</p>
+          </div>
+          <div class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
+            <i class="fas fa-box text-4xl text-[#00246B] mb-2"></i>
+            <h3 class="text-lg font-semibold">Containerization & DevOps</h3>
+            <p class="text-sm text-gray-600 text-center">Docker, Kubernetes, CI/CD, Terraform, Ansible</p>
+          </div>
+          <div class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
+            <i class="fab fa-linux text-4xl text-[#00246B] mb-2"></i>
+            <h3 class="text-lg font-semibold">System Administration</h3>
+            <p class="text-sm text-gray-600 text-center">Linux/UNIX, Windows Server, Shell Scripting, PowerShell</p>
+          </div>
+        </div>
+      </div>
 
-  <!-- JavaScript: AOS initialization & Mobile Menu Toggle -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
+      <!-- Database & Data Management -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-semibold text-center mb-8">Database & Data Management</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
+            <i class="fas fa-database text-4xl text-[#00246B] mb-2"></i>
+            <h3 class="text-lg font-semibold">Database Technologies</h3>
+            <p class="text-sm text-gray-600 text-center">MySQL, MongoDB, SQL Server, Database Design & Optimization</p>
+          </div>
+          <div class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
+            <i class="fas fa-chart-bar text-4xl text-[#00246B] mb-2"></i>
+            <h3 class="text-lg font-semibold">Big Data & Analytics</h3>
+            <p class="text-sm text-gray-600 text-center">Big Data Storage, Data Integration, ETL Processes, Reporting Tools</p>
+          </div>
+        </div>
+      </div>
 
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobile-menu');
+      <!-- Security & Networking -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-semibold text-center mb-8">Security & Networking</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
+            <i class="fas fa-shield-alt text-4xl text-[#00246B] mb-2"></i>
+            <h3 class="text-lg font-semibold">Cybersecurity</h3>
+            <p class="text-sm text-gray-600 text-center">Network Security, Cryptography, Vulnerability Assessment, Security Policies</p>
+          </div>
+          <div class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
+            <i class="fas fa-network-wired text-4xl text-[#00246B] mb-2"></i>
+            <h3 class="text-lg font-semibold">Network Administration</h3>
+            <p class="text-sm text-gray-600 text-center">TCP/IP, VPN, Firewalls, VLANs, DHCP, DNS, Network Protocols</p>
+          </div>
+        </div>
+      </div>
 
-    hamburger.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-
-    // Resume download function
-    function downloadPDF() {
-      window.open('resume.pdf', 'https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:65177b26-9e4f-3da0-aaeb-fbc9ba64d606');
-    }
-  </script>
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
-</body>
-<Analytics/>
-</html>
+      <!-- Development Tools & Methodologies -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-semibold text-center mb-8">Development Tools & Methodologies</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
+            <i class="fab fa-git-alt text-4xl text-[#00246B] mb-2"></i>
+            <h3 class="text-lg font-semibold">Version Control & Collaboration</h3>
+            <p class="text-sm text-gray-600 text-center">Git, GitHub, Jira, Code Review, Team Collaboration</p>
+          </div>
+          <div class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
+            <i class="fas fa-cogs text-4xl text-[#00246B] mb-2"></i>
+            <h3 class="text-lg font-semibold">Software Engineering</h3>
+            <p class="text-sm text-gray-600 text-center">SDLC, Agile, UML, Testing, Design Patterns, Code Quality</p>
+          </div>
+          <div class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
+            <i class="fas fa-project-diagram text-4xl text-[#00246B] mb-2"></i>
+            <h3 class="text-lg font-semibold">Project Management</h3>
+            <p class="text-sm text-gray-600 text-center">PMP Methodologies, ITIL, Risk Management, Team Leadership</p>
+          </div>
+        </div>
+      </div>
