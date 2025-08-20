@@ -10,7 +10,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- AOS Library for Animations
-  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"> -->
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">  -->
 
   <!-- Animate.css (optional) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -22,181 +22,294 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-gray-100 text-gray-800">
+<body>
   <!-- Navbar -->
-  <header class="fixed w-full bg-[#00246B] text-white z-50">
-    <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
-      <h2 class="text-2xl font-bold">Jasjeet Singh Chatha</h2>
-      <nav class="hidden md:flex space-x-6">
-        <a href="#home" class="hover:text-[#CADCFC]">Home</a>
-        <a href="#education" class="hover:text-[#CADCFC]">Education</a>
-        <a href="#experience" class="hover:text-[#CADCFC]">Experience</a>
-        <a href="#projects" class="hover:text-[#CADCFC]">Projects</a>
-        <a href="#skills" class="hover:text-[#CADCFC]">Technical Skills</a>
-        <a href="#about" class="hover:text-[#CADCFC]">About</a>
-        <a href="#contact" class="hover:text-[#CADCFC]">Contact</a>
+  <header class="navbar">
+    <div class="nav-container">
+      <h2 class="logo">Jasjeet Singh Chatha</h2>
+      <nav class="nav-menu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Technical Skills</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
-      <div class="md:hidden">
-        <button id="hamburger" class="focus:outline-none">
-          <i class="fas fa-bars text-xl"></i>
+      <div class="hamburger">
+        <button id="hamburger-btn" class="hamburger-btn">
+          <i class="fas fa-bars"></i>
         </button>
       </div>
     </div>
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="md:hidden hidden bg-[#00246B]">
-      <ul class="flex flex-col space-y-4 p-4">
-        <li><a href="#home" class="hover:text-[#CADCFC]">Home</a></li>
-        <li><a href="#education" class="hover:text-[#CADCFC]">Education</a></li>
-        <li><a href="#experience" class="hover:text-[#CADCFC]">Experience</a></li>
-        <li><a href="#projects" class="hover:text-[#CADCFC]">Projects</a></li>
-        <li><a href="#skills" class="hover:text-[#CADCFC]">Technical Skills</a></li>
-        <li><a href="#about" class="hover:text-[#CADCFC]">About</a></li>
-        <li><a href="#contact" class="hover:text-[#CADCFC]">Contact</a></li>
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="#education" class="mobile-nav-link">Education</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Technical Skills</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
       </ul>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section id="home" class="flex items-center justify-center bg-cover bg-center" style="background-image: url('hero-bg.jpg');" data-aos="fade-up">
-    <div class="bg-[#00246B] bg-opacity-75 w-full h-full flex flex-col items-center justify-center text-center p-4">
-      <h3 class="text-xl text-white mb-2">Hello, I'm</h3>
-      <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Jasjeet Singh Chatha</h1>
-      <h4 class="text-lg md:text-2xl text-white mb-6">
-        Computer Programming Student & Full-Stack Developer specializing in enterprise applications, cloud computing, and system administration.
-      </h4>
-      <div class="space-x-4">
-        <button onclick="window.open('https://www.linkedin.com/in/jasjeet-chatha-543911254/', '_blank')" class="bg-[#00246B] hover:bg-[#001C55] text-white py-2 px-4 rounded">
-          Hire Me
-        </button>
-        <button class="bg-[#00246B] text-white font-semibold py-2 px-4 rounded-lg transition duration-300 hover:bg-[#CADCFC] hover:text-[#00246B]">
+  <section id="home" class="hero-section" data-aos="fade-up">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h3 class="hero-greeting">Hello, I'm</h3>
+        <h1 class="hero-name">Jasjeet Singh Chatha</h1>
+        <h4 class="hero-description">
+          Detail-oriented Computer Systems Technology student specializing in system design, cloud computing, and network administration.
+        </h4>
+        <div class="hero-buttons">
+          <button onclick="window.open('https://www.linkedin.com/in/jasjeet-chatha-543911254/', '_blank')" class="btn btn-primary">
+            Hire Me
+          </button>
           <a href="https://github.com/JasjeetChatha/Resume.com/raw/Hello/Jasjeet_Singh_Chatha_Resume.pdf" 
-             download="Jasjeet_Singh_Chatha_Resume.pdf">
-             Get Resume
+             download="Jasjeet_Singh_Chatha_Resume.pdf" class="btn btn-secondary">
+            Get Resume
           </a>
-        </button>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Education Section -->
-  <section id="education" class="py-16 bg-white" data-aos="fade-up">
-    <div class="max-w-7xl mx-auto px-4">
-      <h1 class="text-3xl font-bold text-center mb-12">Education</h1>
+  <!-- Education & Courses Section -->
+  <section id="education" class="education-section" data-aos="fade-up">
+    <div class="container">
+      <h1 class="section-title">Education & Academic Journey</h1>
       
       <!-- Main Education Card -->
       <div class="education-main">
-        <div class="text-center mb-8">
-          <h2 class="text-2xl font-bold text-[#00246B] mb-2">Computer Programming - Advanced Diploma</h2>
-          <p class="text-lg text-gray-700">Sheridan College | Sept 2022 – Dec 2025 | GPA: 3.55</p>
-          <p class="text-md text-gray-600 mt-2">Currently completing final semester - 30+ comprehensive courses in full-stack development, enterprise applications, and cloud computing</p>
-        </div>
-
-        <!-- Academic Journey -->
-        <div class="grid-consistent md:grid-cols-4 mb-8">
-          <div class="education-item">
-            <h3 class="text-lg font-semibold text-[#1a1f3a] mb-2">Foundation</h3>
-            <ul class="text-sm text-gray-600 space-y-1">
-              <li>• Object-Oriented Programming (Java)</li>
-              <li>• Web Development (HTML5/CSS3)</li>
-              <li>• Computer Math & Logic</li>
-              <li>• Data Communications</li>
-            </ul>
+        <div class="education-card main-education">
+          <div class="education-header">
+            <h2 class="education-title">Computer Programming - Advanced Diploma</h2>
+            <p class="education-institution">Sheridan College</p>
+            <p class="education-duration">September 2022 – December 2025</p>
+            <p class="education-gpa">GPA: 3.54</p>
           </div>
-          <div class="education-item">
-            <h3 class="text-lg font-semibold text-[#1a1f3a] mb-2">Core Development</h3>
-            <ul class="text-sm text-gray-600 space-y-1">
-              <li>• Advanced Java & Frameworks</li>
-              <li>• Full-Stack Web (Node.js/MySQL)</li>
-              <li>• Linux/UNIX Administration</li>
-              <li>• UI/UX Design Principles</li>
-            </ul>
-          </div>
-          <div class="education-item">
-            <h3 class="text-lg font-semibold text-[#1a1f3a] mb-2">Specialization</h3>
-            <ul class="text-sm text-gray-600 space-y-1">
-              <li>• Enterprise Java Development</li>
-              <li>• Mobile App Development</li>
-              <li>• Cloud Architecture & Deployment</li>
-              <li>• Database Design & Big Data</li>
-            </ul>
-          </div>
-          <div class="education-item">
-            <h3 class="text-lg font-semibold text-[#1a1f3a] mb-2">Professional</h3>
-            <ul class="text-sm text-gray-600 space-y-1">
-              <li>• Software Engineering Practices</li>
-              <li>• Project Management (PMP)</li>
-              <li>• IT Service Management (ITIL)</li>
-              <li>• Security & Network Administration</li>
-            </ul>
+          <div class="education-description">
+            <p>Currently completing my final semester of an intensive Computer Programming Advanced Diploma program, featuring 30+ comprehensive courses spanning full-stack development, enterprise applications, mobile development, cloud computing, and software engineering best practices.</p>
           </div>
         </div>
+      </div>
 
-        <!-- Key Projects & Achievements -->
-        <div class="card">
-          <h3 class="text-xl font-semibold text-[#1a1f3a] mb-4">Academic Achievements & Key Projects</h3>
-          <div class="grid md:grid-cols-2 gap-4">
-            <div>
-              <h4 class="font-semibold text-gray-800 mb-2">Enterprise Applications</h4>
-              <p class="text-sm text-gray-600">Developed comprehensive web applications using Java Enterprise platform with secure database integration and cloud deployment</p>
+      <!-- Academic Journey -->
+      <div class="academic-journey">
+        <h2 class="courses-title">Academic Journey & Key Learning Areas</h2>
+        <div class="journey-timeline">
+          <!-- Foundation Semester -->
+          <div class="journey-phase">
+            <div class="phase-header">
+              <h3 class="phase-title">
+                <i class="fas fa-play-circle"></i>
+                Foundation Semester
+              </h3>
             </div>
-            <div>
-              <h4 class="font-semibold text-gray-800 mb-2">Mobile Development</h4>
-              <p class="text-sm text-gray-600">Created cross-platform mobile applications using Android SDK and hybrid frameworks with advanced UI/UX features</p>
+            <ul class="phase-courses">
+              <li>Object-Oriented Programming fundamentals with Java</li>
+              <li>Web Development using HTML5, CSS3, and JavaScript</li>
+              <li>Computer Math Fundamentals and Technical Communication</li>
+              <li>Data Communications and Networking principles</li>
+            </ul>
+          </div>
+
+          <!-- Core Development -->
+          <div class="journey-phase">
+            <div class="phase-header">
+              <h3 class="phase-title">
+                <i class="fas fa-code"></i>
+                Core Development Skills
+              </h3>
             </div>
-            <div>
-              <h4 class="font-semibold text-gray-800 mb-2">Cloud Infrastructure</h4>
-              <p class="text-sm text-gray-600">Designed and deployed scalable cloud architectures with serverless applications and automated CI/CD pipelines</p>
+            <ul class="phase-courses">
+              <li>Advanced Java programming with enterprise frameworks</li>
+              <li>Full-stack web development using Node.js and MySQL</li>
+              <li>Linux/UNIX system administration and shell scripting</li>
+              <li>Interactive UI/UX design and user-centered development</li>
+            </ul>
+          </div>
+
+          <!-- Advanced Specializations -->
+          <div class="journey-phase">
+            <div class="phase-header">
+              <h3 class="phase-title">
+                <i class="fas fa-rocket"></i>
+                Advanced Specializations
+              </h3>
             </div>
-            <div>
-              <h4 class="font-semibold text-gray-800 mb-2">Technical Leadership</h4>
-              <p class="text-sm text-gray-600">Led group projects in software engineering, conducted code reviews, and mentored peers in development best practices</p>
+            <ul class="phase-courses">
+              <li>Enterprise Java Development and .NET C# applications</li>
+              <li>Mobile application development (Android and Hybrid platforms)</li>
+              <li>Cloud architecture and serverless computing</li>
+              <li>Database design, implementation, and big data management</li>
+            </ul>
+          </div>
+
+          <!-- Professional Competencies -->
+          <div class="journey-phase">
+            <div class="phase-header">
+              <h3 class="phase-title">
+                <i class="fas fa-briefcase"></i>
+                Professional Competencies
+              </h3>
             </div>
+            <ul class="phase-courses">
+              <li>Software engineering methodologies and project management</li>
+              <li>Computer and network security implementation</li>
+              <li>IT service management and process optimization</li>
+              <li>Advanced algorithms and data structures in C</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Signature Projects -->
+      <div class="signature-projects">
+        <h2 class="courses-title">Signature Projects & Achievements</h2>
+        <div class="signature-grid">
+          <div class="signature-card">
+            <h3 class="signature-title">
+              <i class="fas fa-globe"></i>
+              Enterprise Web Application Suite
+            </h3>
+            <ul class="signature-details">
+              <li>Developed comprehensive web applications using Java Enterprise platform</li>
+              <li>Implemented secure database integration with MySQL and NoSQL systems</li>
+              <li>Created responsive, accessible interfaces following WAI guidelines</li>
+            </ul>
+          </div>
+
+          <div class="signature-card">
+            <h3 class="signature-title">
+              <i class="fas fa-mobile-alt"></i>
+              Cross-Platform Mobile Applications
+            </h3>
+            <ul class="signature-details">
+              <li>Built native Android applications with advanced UI/UX features</li>
+              <li>Developed hybrid mobile apps using Ionic/Angular framework</li>
+              <li>Integrated location services, multimedia, and device-specific functionalities</li>
+            </ul>
+          </div>
+
+          <div class="signature-card">
+            <h3 class="signature-title">
+              <i class="fas fa-cloud"></i>
+              Cloud Infrastructure Solutions
+            </h3>
+            <ul class="signature-details">
+              <li>Designed and deployed scalable cloud network architectures</li>
+              <li>Implemented serverless applications with automated CI/CD pipelines</li>
+              <li>Managed virtual resources and elastic computing instances</li>
+            </ul>
+          </div>
+
+          <div class="signature-card">
+            <h3 class="signature-title">
+              <i class="fas fa-database"></i>
+              Database Management Systems
+            </h3>
+            <ul class="signature-details">
+              <li>Created complex relational database models with normalization</li>
+              <li>Developed data integration processes for heterogeneous systems</li>
+              <li>Built comprehensive reporting solutions and data visualization tools</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technical Leadership -->
+      <div class="leadership-section">
+        <h2 class="courses-title">Technical Leadership Experience</h2>
+        <div class="leadership-highlights">
+          <div class="leadership-item">
+            <i class="fas fa-users"></i>
+            <span>Led group projects in Software Process Management and Database Integration</span>
+          </div>
+          <div class="leadership-item">
+            <i class="fas fa-code-branch"></i>
+            <span>Conducted peer code reviews and collaborative development sessions</span>
+          </div>
+          <div class="leadership-item">
+            <i class="fas fa-project-diagram"></i>
+            <span>Designed and executed Software Development Plans following industry standards</span>
+          </div>
+          <div class="leadership-item">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <span>Mentored teammates in object-oriented design principles and best practices</span>
           </div>
         </div>
       </div>
 
       <!-- Certifications -->
-      <div class="text-center">
-        <h3 class="text-xl font-semibold mb-4">Certifications & Professional Development</h3>
-        <div class="flex flex-wrap justify-center gap-4">
-          <span class="cert-badge">AWS Certified Cloud Practitioner (In Progress)</span>
-          <span class="cert-badge">LinkedIn Learning: JavaScript Language</span>
-          <span class="cert-badge">Project Management Professional (PMP) Principles</span>
+      <div class="certifications-section">
+        <h2 class="certifications-title">Certifications & Professional Knowledge</h2>
+        <div class="certification-grid">
+          <div class="certification-item">
+            <i class="fab fa-aws"></i>
+            <span>AWS Certified Cloud Practitioner (In Progress)</span>
+          </div>
+          <div class="certification-item">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn Learning: Learning the JavaScript Language</span>
+          </div>
+          <div class="certification-item">
+            <i class="fas fa-project-diagram"></i>
+            <span>Project Management Professional (PMP) principles</span>
+          </div>
+          <div class="certification-item">
+            <i class="fas fa-cogs"></i>
+            <span>Information Technology Infrastructure Library (ITIL) concepts</span>
+          </div>
+          <div class="certification-item">
+            <i class="fas fa-universal-access"></i>
+            <span>Web Accessibility Initiative (WAI) compliance</span>
+          </div>
+          <div class="certification-item">
+            <i class="fas fa-infinity"></i>
+            <span>Agile and Scrum methodologies</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Work Experience Section -->
-  <section id="experience" class="py-16 bg-[#CADCFC]" data-aos="fade-up">
-    <div class="max-w-7xl mx-auto px-4">
-      <h1 class="text-3xl font-bold text-center mb-12">Professional Experience</h1>
-      <div class="space-y-8">
+  <section id="experience" class="experience-section" data-aos="fade-up">
+    <div class="container">
+      <h1 class="section-title">Work Experience</h1>
+      <div class="experience-timeline">
         <!-- Experience Card 1 -->
         <div class="experience-card">
-          <h2 class="text-2xl font-semibold">Junior Web Developer (Systems & Infrastructure Focus)</h2>
-          <p class="text-gray-600 mt-1">Skill Squirrel | Remote | Sept 2024 – Dec 2024</p>
-          <ul class="list-disc list-inside mt-4 space-y-2">
+          <h2 class="experience-title">Junior Web Developer (Systems & Infrastructure Focus)</h2>
+          <p class="experience-meta">Skill Squirrel | Remote | Sept 2024 – Dec 2024</p>
+          <ul class="experience-details">
             <li>Assisted in deploying and configuring cloud-based applications on AWS, contributing to automated deployment pipelines via GitHub CI/CD, reducing deployment cycles by 25%.</li>
             <li>Collaborated with cross-functional teams to integrate front-end modules with secure back-end services, ensuring system stability and compliance with accessibility standards.</li>
             <li>Performed in-depth code reviews and debugging sessions, leading to a 20% reduction in post-deployment issues and improved system reliability.</li>
           </ul>
         </div>
+
         <!-- Experience Card 2 -->
         <div class="experience-card">
-          <h2 class="text-2xl font-semibold">Web Developer (Infrastructure & Efficiency Enhancements)</h2>
-          <p class="text-gray-600 mt-1">MyKolachi Karahi & BBQ House | Mississauga, Ontario | Jan 2024 – Apr 2024</p>
-          <ul class="list-disc list-inside mt-4 space-y-2">
+          <h2 class="experience-title">Web Developer (Infrastructure & Efficiency Enhancements)</h2>
+          <p class="experience-meta">MyKolachi Karahi & BBQ House | Mississauga, Ontario | Jan 2024 – Apr 2024</p>
+          <ul class="experience-details">
             <li>Developed a clock-in/out system using ASP.NET and C#, streamlining workforce management and improving operational efficiency by 40%.</li>
             <li>Enhanced backend processes using Java and MySQL, resulting in a 20% reduction in order processing time and improved system responsiveness.</li>
             <li>Utilized Agile methodologies and Git for version control, achieving a 95% on-time project milestone rate while ensuring seamless system updates.</li>
           </ul>
         </div>
+
         <!-- Experience Card 3 -->
         <div class="experience-card">
-          <h2 class="text-2xl font-semibold">Freelance Web Developer (Capstone Project with Systems Integration)</h2>
-          <p class="text-gray-600 mt-1">Sheridan HR Group | Jan 2025 – Apr 2025</p>
-          <ul class="list-disc list-inside mt-4 space-y-2">
+          <h2 class="experience-title">Freelance Web Developer (Capstone Project with Systems Integration)</h2>
+          <p class="experience-meta">Sheridan HR Group | Jan 2025 – Apr 2025</p>
+          <ul class="experience-details">
             <li>Collaborated with HR and IT teams to redesign and deploy a client website with integrated e-commerce, invoicing, and service booking systems.</li>
             <li>Focused on responsive design and backend process optimization to ensure scalable deployment and enhanced user experience.</li>
           </ul>
@@ -206,201 +319,491 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="py-16 bg-white" data-aos="fade-up">
-    <div class="max-w-7xl mx-auto px-4">
-      <h1 class="text-3xl font-bold text-center mb-12">Featured Projects</h1>
-      <div class="grid-consistent md:grid-cols-3 gap-8">
+  <section id="projects" class="projects-section" data-aos="fade-up">
+    <div class="container">
+      <h1 class="section-title">Projects</h1>
+      <div class="projects-grid">
         <!-- Project Card 1 -->
-        <div class="project-card">
-          <img src="aws.png" alt="AWS Cloud-Based Security Project" class="w-full h-48 object-cover">
-          <div class="p-4">
-            <h3 class="text-xl font-semibold mb-2">AWS Cloud-Based Security Project</h3>
-            <p class="text-gray-600 text-sm">Deployed AWS EC2 instances using Python automation, implementing firewall configurations and access control policies. Future plans include AWS Lambda integration for automated security responses.</p>
-          </div>
-        </div>
-        <!-- Project Card 2 -->
-        <a href="https://www.linkedin.com/posts/jasjeet-chatha-543911254_built-my-own-youtube-music-playlist-downloader-activity-7350727982887448576-HuHn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD7IhsMBUK-us8cJqsINajOD28boUUl9ij8" target="_blank" rel="noopener noreferrer">
+         <a href="https://e-store-dun-tau.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
           <div class="project-card">
-            <img src="playlistdownloader.jpeg" alt="YouTube Music Playlist Downloader" class="w-full h-48 object-cover">
-            <div class="p-4">
-              <h3 class="text-xl font-semibold mb-2">YouTube Music Playlist Downloader</h3>
-              <p class="text-gray-600 text-sm">Built a simple Python app with a GUI to download YouTube Music playlists offline without Premium. Designed for personal use, it's reliable, hassle-free, and powered by yt-dlp.</p>
+            <img src="ecomerce.png" alt="Full-Stack E-commerce Website" class="project-image">
+            <div class="project-content">
+              <h3 class="project-title">Full-Stack E-commerce Website (MERN)</h3>
+              <p class="project-description">A passion project I'm building from scratch using the MERN stack. It features product listings, add-to-cart functionality, and dynamic routing. The frontend is live on Vercel, and I'm actively working on the backend APIs and database.</p>
             </div>
           </div>
         </a>
+        <div class="project-card">
+          <img src="aws.png" alt="AWS Cloud-Based Security Project" class="project-image">
+          <div class="project-content">
+            <h3 class="project-title">AWS Cloud-Based Security Project</h3>
+            <p class="project-description">Deployed AWS EC2 instances using Python automation, implementing firewall configurations and access control policies. Future plans include AWS Lambda integration for automated security responses.</p>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <a href="https://www.linkedin.com/posts/jasjeet-chatha-543911254_built-my-own-youtube-music-playlist-downloader-activity-7350727982887448576-HuHn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD7IhsMBUK-us8cJqsINajOD28boUUl9ij8" target="_blank" rel="noopener noreferrer" class="project-link">
+          <div class="project-card">
+            <img src="playlistdownloader.jpeg" alt="YouTube Music Playlist Downloader" class="project-image">
+            <div class="project-content">
+              <h3 class="project-title">YouTube Music Playlist Downloader</h3>
+              <p class="project-description">Built a simple Python app with a GUI to download YouTube Music playlists offline without Premium. Designed for personal use, it's reliable, hassle-free, and powered by yt-dlp. Next up: progress bar and format options!</p>
+            </div>
+          </div>
+        </a>
+
         <!-- Project Card 3 -->
         <div class="project-card">
-          <img src="image.png" alt="Student Data Management System" class="w-full h-48 object-cover">
-          <div class="p-4">
-            <h3 class="text-xl font-semibold mb-2">Student Data Management System</h3>
-            <p class="text-gray-600 text-sm">Java-based GUI application that streamlines student record management, reducing data retrieval time by 50% while ensuring secure access with MySQL.</p>
+          <img src="image.png" alt="Student Data Management System" class="project-image">
+          <div class="project-content">
+            <h3 class="project-title">Student Data Management System</h3>
+            <p class="project-description">Java-based GUI application that streamlines student record management, reducing data retrieval time by 50% while ensuring secure access with MySQL.</p>
           </div>
         </div>
+
         <!-- Project Card 4 -->
         <div class="project-card">
-          <img src="lawyer_info.png" alt="Lawyer Information Management System" class="w-full h-48 object-cover">
-          <div class="p-4">
-            <h3 class="text-xl font-semibold mb-2">Lawyer Information Management System</h3>
-            <p class="text-gray-600 text-sm">Secure, role-based access application built with Spring Boot and MySQL, optimizing legal data management and reducing manual entry time by 30%.</p>
+          <img src="lawyer_info.png" alt="Lawyer Information Management System" class="project-image">
+          <div class="project-content">
+            <h3 class="project-title">Lawyer Information Management System</h3>
+            <p class="project-description">Secure, role-based access application built with Spring Boot and MySQL, optimizing legal data management and reducing manual entry time by 30%.</p>
           </div>
         </div>
+
         <!-- Project Card 5 -->
-        <a href="https://jasjeetchatha.github.io/Resume.com/" target="_blank" rel="noopener noreferrer">
+        <a href="https://jasjeetchatha.github.io/Resume.com/" target="_blank" rel="noopener noreferrer" class="project-link">
           <div class="project-card">
-            <img src="portfolio.png" alt="Portfolio Website" class="w-full h-48 object-cover">
-            <div class="p-4">
-              <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
-              <p class="text-gray-600 text-sm">Responsive website showcasing projects and secure coding practices to enhance professional online presence.</p>
+            <img src="portfolio.png" alt="Portfolio Website" class="project-image">
+            <div class="project-content">
+              <h3 class="project-title">Portfolio Website</h3>
+              <p class="project-description">Responsive website showcasing projects and secure coding practices to enhance professional online presence.</p>
             </div>
           </div>
         </a>
-        <!-- Project Card 6 -->
-        <a href="https://e-store-dun-tau.vercel.app/" target="_blank" rel="noopener noreferrer">
-          <div class="project-card">
-            <img src="ecomerce.png" alt="Full-Stack E-commerce Website" class="w-full h-48 object-cover">
-            <div class="p-4">
-              <h3 class="text-xl font-semibold mb-2">Full-Stack E-commerce Website (MERN)</h3>
-              <p class="text-gray-600 text-sm">A comprehensive e-commerce platform built from scratch using the MERN stack with product listings, cart functionality, and dynamic routing. Currently developing backend APIs and database integration.</p>
-            </div>
-          </div>
-        </a>
+        
       </div>
     </div>
   </section>
 
-  <!-- Enhanced Technical Skills Section -->
-  <section id="skills" class="py-16 bg-[#CADCFC]" data-aos="fade-up">
-    <div class="max-w-7xl mx-auto px-4">
-      <h1 class="text-3xl font-bold text-center mb-12">Technical Skills & Expertise</h1>
+  <!-- Technical Skills Section -->
+  <section id="skills" class="skills-section" data-aos="fade-up">
+    <div class="container">
+      <h1 class="section-title">Technical Skills & Competencies</h1>
       
-      <!-- Programming Languages -->
-      <div class="mb-12">
-        <h2 class="text-2xl font-semibold text-center mb-8">Programming Languages</h2>
-        <div class="grid-consistent md:grid-cols-4 gap-6">
+      <!-- Core Programming Languages -->
+      <div class="skills-category">
+        <h2 class="skills-category-title">Core Programming Languages</h2>
+        <div class="skills-grid">
           <div class="skill-card">
-            <i class="fab fa-java text-4xl text-[#1a1f3a] mb-2"></i>
-            <h3 class="text-lg font-semibold">Java</h3>
-            <p class="text-sm text-gray-600 text-center">Advanced OOP, Enterprise Development</p>
+            <div class="skill-icon">
+              <i class="fab fa-java"></i>
+            </div>
+            <h3 class="skill-title">Java (Advanced)</h3>
+            <p class="skill-description">OOP, Enterprise Development, Android, Spring Framework, Maven/Gradle</p>
           </div>
+
           <div class="skill-card">
-            <i class="fab fa-js-square text-4xl text-[#1a1f3a] mb-2"></i>
-            <h3 class="text-lg font-semibold">JavaScript/Node.js</h3>
-            <p class="text-sm text-gray-600 text-center">Full-Stack Development, APIs</p>
+            <div class="skill-icon">
+              <i class="fab fa-js"></i>
+            </div>
+            <h3 class="skill-title">JavaScript/Node.js</h3>
+            <p class="skill-description">Full-stack development, Express.js, DOM Manipulation, RESTful APIs</p>
           </div>
+
           <div class="skill-card">
-            <i class="fas fa-code text-4xl text-[#1a1f3a] mb-2"></i>
-            <h3 class="text-lg font-semibold">C# / .NET</h3>
-            <p class="text-sm text-gray-600 text-center">Desktop & Web Applications</p>
+            <div class="skill-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3 class="skill-title">C#/.NET</h3>
+            <p class="skill-description">Desktop applications, ASP.NET, Windows Forms, WPF</p>
           </div>
+
           <div class="skill-card">
-            <i class="fab fa-python text-4xl text-[#1a1f3a] mb-2"></i>
-            <h3 class="text-lg font-semibold">Python</h3>
-            <p class="text-sm text-gray-600 text-center">Scripting, Automation, Data Structures</p>
+            <div class="skill-icon">
+              <i class="fas fa-terminal"></i>
+            </div>
+            <h3 class="skill-title">C & System Programming</h3>
+            <p class="skill-description">Data structures, algorithms, system-level programming</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-html5"></i>
+            </div>
+            <h3 class="skill-title">HTML5/CSS3</h3>
+            <p class="skill-description">Responsive design, accessibility compliance, modern web standards</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3 class="skill-title">SQL & Database Languages</h3>
+            <p class="skill-description">Database queries, stored procedures, optimization</p>
           </div>
         </div>
       </div>
 
-      <!-- Web Technologies -->
-      <div class="mb-12">
-        <h2 class="text-2xl font-semibold text-center mb-8">Web Development Stack</h2>
-        <div class="grid-consistent md:grid-cols-3 gap-6">
+      <!-- Web Development Stack -->
+      <div class="skills-category">
+        <h2 class="skills-category-title">Web Development Stack</h2>
+        <div class="skills-grid">
           <div class="skill-card">
-            <i class="fab fa-html5 text-4xl text-[#1a1f3a] mb-2"></i>
-            <h3 class="text-lg font-semibold">Frontend Technologies</h3>
-            <p class="text-sm text-gray-600 text-center">HTML5, CSS3, JavaScript, React, Angular</p>
+            <div class="skill-icon">
+              <i class="fab fa-node-js"></i>
+            </div>
+            <h3 class="skill-title">Node.js Ecosystem</h3>
+            <p class="skill-description">Runtime Environment, Express.js, AJAX, Asynchronous Programming</p>
           </div>
+
           <div class="skill-card">
-            <i class="fas fa-server text-4xl text-[#1a1f3a] mb-2"></i>
-            <h3 class="text-lg font-semibold">Backend Development</h3>
-            <p class="text-sm text-gray-600 text-center">Node.js, Express.js, Spring Framework, ASP.NET</p>
+            <div class="skill-icon">
+              <i class="fab fa-angular"></i>
+            </div>
+            <h3 class="skill-title">Angular Framework</h3>
+            <p class="skill-description">Single-page applications, component architecture, TypeScript</p>
           </div>
+
           <div class="skill-card">
-            <i class="fas fa-mobile-alt text-4xl text-[#1a1f3a] mb-2"></i>
-            <h3 class="text-lg font-semibold">Mobile Development</h3>
-            <p class="text-sm text-gray-600 text-center">Android SDK, Ionic, Hybrid Apps, Kotlin</p>
+            <div class="skill-icon">
+              <i class="fas fa-plug"></i>
+            </div>
+            <h3 class="skill-title">RESTful API Development</h3>
+            <p class="skill-description">Web services, API design, microservices architecture</p>
           </div>
         </div>
       </div>
 
-      <!-- Infrastructure & Cloud -->
-      <div class="mb-12">
-        <h2 class="text-2xl font-semibold text-center mb-8">Infrastructure & Cloud Technologies</h2>
-        <div class="grid md:grid-cols-3 gap-6">
-          <div class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
-            <i class="fas fa-cloud text-4xl text-[#00246B] mb-2"></i>
-            <h3 class="text-lg font-semibold">Cloud Platforms</h3>
-            <p class="text-sm text-gray-600 text-center">AWS (EC2, VPC, IAM), Azure, Serverless Architecture</p>
+      <!-- Mobile Development -->
+      <div class="skills-category">
+        <h2 class="skills-category-title">Mobile Development</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-android"></i>
+            </div>
+            <h3 class="skill-title">Android SDK</h3>
+            <p class="skill-description">Native Android apps, Kotlin, device API integration</p>
           </div>
-          <div class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
-            <i class="fas fa-box text-4xl text-[#00246B] mb-2"></i>
-            <h3 class="text-lg font-semibold">Containerization & DevOps</h3>
-            <p class="text-sm text-gray-600 text-center">Docker, Kubernetes, CI/CD, Terraform, Ansible</p>
-          </div>
-          <div class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
-            <i class="fab fa-linux text-4xl text-[#00246B] mb-2"></i>
-            <h3 class="text-lg font-semibold">System Administration</h3>
-            <p class="text-sm text-gray-600 text-center">Linux/UNIX, Windows Server, Shell Scripting, PowerShell</p>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3 class="skill-title">Hybrid Mobile Apps</h3>
+            <p class="skill-description">Ionic Framework, Cordova/PhoneGap, cross-platform development</p>
           </div>
         </div>
       </div>
 
-      <!-- Database & Data Management -->
-      <div class="mb-12">
-        <h2 class="text-2xl font-semibold text-center mb-8">Database & Data Management</h2>
-        <div class="grid-consistent md:grid-cols-2 gap-6">
+      <!-- Database Technologies -->
+      <div class="skills-category">
+        <h2 class="skills-category-title">Database Technologies</h2>
+        <div class="skills-grid">
           <div class="skill-card">
-            <i class="fas fa-database text-4xl text-[#1a1f3a] mb-2"></i>
-            <h3 class="text-lg font-semibold">Database Technologies</h3>
-            <p class="text-sm text-gray-600 text-center">MySQL, MongoDB, SQL Server, Database Design & Optimization</p>
+            <div class="skill-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3 class="skill-title">Relational Databases</h3>
+            <p class="skill-description">MySQL, SQL Server, ER modeling, normalization</p>
           </div>
+
           <div class="skill-card">
-            <i class="fas fa-chart-bar text-4xl text-[#1a1f3a] mb-2"></i>
-            <h3 class="text-lg font-semibold">Big Data & Analytics</h3>
-            <p class="text-sm text-gray-600 text-center">Big Data Storage, Data Integration, ETL Processes, Reporting Tools</p>
+            <div class="skill-icon">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <h3 class="skill-title">NoSQL Databases</h3>
+            <p class="skill-description">MongoDB, document stores, distributed systems</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <h3 class="skill-title">Big Data & Analytics</h3>
+            <p class="skill-description">Data integration, ETL processes, reporting tools</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cloud & Infrastructure -->
+      <div class="skills-category">
+        <h2 class="skills-category-title">Cloud & Infrastructure</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-cloud"></i>
+            </div>
+            <h3 class="skill-title">Cloud Architecture</h3>
+            <p class="skill-description">AWS/Azure/GCP, serverless computing, elastic computing</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-server"></i>
+            </div>
+            <h3 class="skill-title">Virtualization</h3>
+            <p class="skill-description">VM management, containerization, infrastructure as code</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-linux"></i>
+            </div>
+            <h3 class="skill-title">Linux/UNIX Administration</h3>
+            <p class="skill-description">System administration, shell scripting, automation</p>
           </div>
         </div>
       </div>
 
       <!-- Security & Networking -->
-      <div class="mb-12">
-        <h2 class="text-2xl font-semibold text-center mb-8">Security & Networking</h2>
-        <div class="grid-consistent md:grid-cols-2 gap-6">
+      <div class="skills-category">
+        <h2 class="skills-category-title">Security & Networking</h2>
+        <div class="skills-grid">
           <div class="skill-card">
-            <i class="fas fa-shield-alt text-4xl text-[#1a1f3a] mb-2"></i>
-            <h3 class="text-lg font-semibold">Cybersecurity</h3>
-            <p class="text-sm text-gray-600 text-center">Network Security, Cryptography, Vulnerability Assessment, Security Policies</p>
+            <div class="skill-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3 class="skill-title">Network Security</h3>
+            <p class="skill-description">Firewall configuration, intrusion detection, penetration testing</p>
           </div>
+
           <div class="skill-card">
-            <i class="fas fa-network-wired text-4xl text-[#1a1f3a] mb-2"></i>
-            <h3 class="text-lg font-semibold">Network Administration</h3>
-            <p class="text-sm text-gray-600 text-center">TCP/IP, VPN, Firewalls, VLANs, DHCP, DNS, Network Protocols</p>
+            <div class="skill-icon">
+              <i class="fas fa-lock"></i>
+            </div>
+            <h3 class="skill-title">Cryptography & PKI</h3>
+            <p class="skill-description">Encryption algorithms, digital signatures, security protocols</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <h3 class="skill-title">Network Protocols</h3>
+            <p class="skill-description">TCP/IP, HTTP/HTTPS, FTP, DNS, network troubleshooting</p>
           </div>
         </div>
       </div>
 
-      <!-- Development Tools & Methodologies -->
-      <div class="mb-12">
-        <h2 class="text-2xl font-semibold text-center mb-8">Development Tools & Methodologies</h2>
-        <div class="grid md:grid-cols-3 gap-6">
-          <div class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
-            <i class="fab fa-git-alt text-4xl text-[#00246B] mb-2"></i>
-            <h3 class="text-lg font-semibold">Version Control & Collaboration</h3>
-            <p class="text-sm text-gray-600 text-center">Git, GitHub, Jira, Code Review, Team Collaboration</p>
+      <!-- Software Engineering -->
+      <div class="skills-category">
+        <h2 class="skills-category-title">Software Engineering & Development Practices</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-project-diagram"></i>
+            </div>
+            <h3 class="skill-title">Object-Oriented Design</h3>
+            <p class="skill-description">Design patterns, SOLID principles, UML modeling</p>
           </div>
-          <div class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
-            <i class="fas fa-cogs text-4xl text-[#00246B] mb-2"></i>
-            <h3 class="text-lg font-semibold">Software Engineering</h3>
-            <p class="text-sm text-gray-600 text-center">SDLC, Agile, UML, Testing, Design Patterns, Code Quality</p>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-git-alt"></i>
+            </div>
+            <h3 class="skill-title">Version Control & CI/CD</h3>
+            <p class="skill-description">Git, collaborative workflows, automated testing</p>
           </div>
-          <div class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center transition transform duration-300 hover:scale-105 hover:shadow-xl">
-            <i class="fas fa-project-diagram text-4xl text-[#00246B] mb-2"></i>
-            <h3 class="text-lg font-semibold">Project Management</h3>
-            <p class="text-sm text-gray-600 text-center">PMP Methodologies, ITIL, Risk Management, Team Leadership</p>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-infinity"></i>
+            </div>
+            <h3 class="skill-title">SDLC & Methodologies</h3>
+            <p class="skill-description">Agile, Scrum, Waterfall, project management</p>
           </div>
         </div>
       </div>
+
+      <!-- Development Tools -->
+      <div class="skills-category">
+        <h2 class="skills-category-title">Development Tools & Environments</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-code-branch"></i>
+            </div>
+            <h3 class="skill-title">IDEs & Development Tools</h3>
+            <p class="skill-description">Eclipse, IntelliJ IDEA, Visual Studio, build automation</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-vial"></i>
+            </div>
+            <h3 class="skill-title">Testing Frameworks</h3>
+            <p class="skill-description">JUnit, Selenium, NUnit, test automation</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-tasks"></i>
+            </div>
+            <h3 class="skill-title">Project Management Tools</h3>
+            <p class="skill-description">Jira, Trello, Microsoft Project, Agile boards</p>
+          </div>
+        </div>
       </div>
+
+      <!-- User Experience & Design -->
+      <div class="skills-category">
+        <h2 class="skills-category-title">User Experience & Design</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-palette"></i>
+            </div>
+            <h3 class="skill-title">UI/UX Design</h3>
+            <p class="skill-description">User-centered design, prototyping, wireframing</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-universal-access"></i>
+            </div>
+            <h3 class="skill-title">Accessibility</h3>
+            <p class="skill-description">WCAG guidelines, WAI standards compliance</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section" data-aos="fade-up">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h1 class="section-title">About Me</h1>
+          <p class="about-paragraph">
+            I am a detail-oriented Computer Systems Technology student at Sheridan College specializing in system design, cloud computing, and network administration. I have hands-on experience deploying scalable solutions, automating processes, and maintaining secure, efficient environments across Linux and Windows server ecosystems.
+          </p>
+          <p class="about-paragraph">
+            My current focus includes expanding expertise in configuration management and infrastructure automation using Terraform and Ansible while rapidly developing proficiency in PowerShell scripting.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <h3>Education</h3>
+              <p>Computer Systems Technology – Information System Engineering, Sheridan College (Sept 2022 – Dec 2025) | GPA: 3.55</p>
+            </div>
+            <div class="highlight-item">
+              <h3>Certifications</h3>
+              <p>AWS Certified Cloud Practitioner (In Progress), LinkedIn Learning: Learning the JavaScript Language</p>
+            </div>
+            <div class="highlight-item">
+              <h3>Focus Areas</h3>
+              <p>Cloud Computing, System Administration, DevOps, Network Security, Infrastructure Automation</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <!-- Profile image placeholder -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section" data-aos="fade-up">
+    <div class="container">
+      <h1 class="section-title">Contact Me</h1>
+      <div class="contact-content">
+        <div class="contact-form-container">
+          <h2 class="contact-subtitle">Get In Touch</h2>
+          <form id="contact-form" class="contact-form">
+            <input id="name" class="form-input" type="text" placeholder="Your Name" required>
+            <input id="email" class="form-input" type="email" placeholder="Your Email" required>
+            <input id="phone" class="form-input" type="text" placeholder="Your Phone" required>
+            <textarea id="message" class="form-textarea" placeholder="Write your message" rows="5" required></textarea>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <h2 class="contact-subtitle">My Contact Details</h2>
+          <ul class="contact-details">
+            <li class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span><strong>Email:</strong> jasjeet.chatha@gmail.com</span>
+            </li>
+            <li class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span><strong>Phone:</strong> +1 (437)-663-8423</span>
+            </li>
+            <li class="contact-item">
+              <i class="fab fa-linkedin"></i>
+              <span><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jasjeet-chatha-543911254/" class="contact-link">Profile</a></span>
+            </li>
+            <li class="contact-item">
+              <i class="fab fa-github"></i>
+              <span><strong>GitHub:</strong> <a href="https://github.com/JasjeetChatha?tab=repositories" class="contact-link">Repositories</a></span>
+            </li>
+            <li class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span><strong>Address:</strong> ON, Canada</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">&copy; 2025 Jasjeet Singh Chatha. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    // AOS initialization
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+
+    // Mobile menu toggle
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburgerBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+          // Close mobile menu if open
+          mobileMenu.classList.add('hidden');
+        }
+      });
+    });
+
+    // Contact form handling
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your message! I will get back to you soon.');
+      this.reset();
+    });
+
+    // Navbar background change on scroll
+    window.addEventListener('scroll', function() {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
 </body>
 </html>
